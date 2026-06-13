@@ -454,46 +454,46 @@
 * to‘pik va tovon shishi
 * teri osti venalarini birdan kengayishi
 92. Delbe-Pertes sinamasi yordamida nimani aniqlash mumkin?
-* oyoq chuqur venalari o'tkazuvchanligini (To'g'ri javob)
-* oyoq yuzaki venalari o'tkazuvchanligini
-* perforant venalar klapanlari yetishmovchiligini
-* arterial qon aylanish yetishmovchiligini
-93. Tropik yara ko‘proq qaysi kasallik asorati hisoblanadi?
-* surunkali venoz yetishmovchilik (To'g'ri javob)
-* obliteratsiyalovchi endarterit
-* obliteratsiyalovchi ateroskleroz
-* qandli diabet
-94. O‘tkir yuzaki tromboflebitni davolashda qaysi usul qo‘llanilmaydi?
-* qat'iy yotoq tartibi (To'g'ri javob)
-* mahalliy gipurinli surtmalar
-* nosteroid yallig'lanishga qarshi vositalar
-* elastik bintlash
-95. Varikoz kengaygan venalardan qon ketganda birinchi yordam:
-* oyoqni ko'tarib, bosuvchi bog'lam qo'yish (To'g'ri javob)
-* qonni to'xtatuvchi turg'un jgut qo'yish
-* zudlik bilan operatsiya qilish
-* muz qo'yish va qon to'xtatuvchi dori yuborish
-96. Oyoq chuqur venalari o‘tkir trombozining eng xavfli asorati:
-* o‘pka arteriyasi tromboemboliyasi (To'g'ri javob)
-* ishemik gangrena
-* surunkali venoz yetishmovchilik
-* o'tkir yiringli tromboflebit
-97. Posttromboflebitik sindrom (PTFS) rivojlanishining asosiy sababi:
-* chuqur venalar klapanlari destruksiyasi (To'g'ri javob)
-* yuzaki venalar varikoz kengayishi
-* perforant venalar sklerozi
-* arterial qon oqimi kamayishi
-98. Quyidagilardan qaysi biri varikoz kasalligida xirurgik davolash usuliga kirmaydi?
-* limfodrenaj amaliyoti (To'g'ri javob)
-* Troyanov-Trendelenburg operatsiyasi
-* Kokket operatsiyasi
-* Bebkokk operatsiyasi
-99. Pratt-1 va Pratt-2 sinamalari nima maqsadda o‘tkaziladi?
-* perforant (kommunikant) venalar klapanlari holatini aniqlash (To'g'ri javob)
-* chuqur venalar o'tkazuvchanligini aniqlash
-* yuzaki venalar klapanlari yetishmovchiligini aniqlash
-* arterial klapanlar holatini tekshirish
-100. Lerish sindromiga xos boʻlmagan simptom:
+* chukur vena o‘tkazuvchanligini (To'g'ri javob)
+* yuza venalarini o‘tkazuvchanligini
+* son arteriyalar o‘tkazuvchanligini
+* komunikant venalar o‘tkazuvchanligini
+93. Varikoz kasalligi asoratiga nima xarakterli emas?
+* to‘piq gangrenasi (To'g'ri javob)
+* trofik yara
+* kengaygan venalar tromboflebiti
+* varikoz tugunlardan qon ketishi
+94. Varikoz kasalligida ko‘rsatilgan davolash usullaridan qaysi birini qo‘llab bo‘lmaydi?
+* endarterektomiya (To'g'ri javob)
+* skleroterapiya
+* flebektomiya
+* konservativ davo
+95. Yuza venalar o‘tkir tromboziga qanday 3 simptom xos?
+* og‘riq, teri giperemiyasi va venalar bo‘ylab qattiqlanish (To'g'ri javob)
+* og‘riq, shish, teri tsianozi
+* og‘riq, teri giperemiyasi, musbat Xomans simptomi
+* og‘riq, teri tsianozi, monoparez
+96. Vena trombozi hosil bo‘lishida nima ahamiyatga ega emas?
+* bemor eshi (To'g'ri javob)
+* qon aylanishi sekinlashishi
+* giperkoagulyatsiya
+* endoteliy zararlanishi
+97. Varikoz kasalligi qaysi kasallik bilan differentsial diagnoz qilinmaydi:
+* Lerish sindromi (To'g'ri javob)
+* posttromboflebitik sindrom
+* Klippel-Trennone sindromi
+* arteriovenoz oqma
+98. Obliterattsiyalovchi endarteritda ko‘p xollarda qaysi tomir zararlanadi?
+* to‘piq va tovon arteriyalari (To'g'ri javob)
+* aorta
+* katta kalibrdagi arteriya
+* hamma tomirlar bir xil darajada
+99. Oyoqning surunkali ishemiyasini tipik belgilari (noto‘g‘risini ko‘rsating):
+* og‘riq, vena yunalishi bo‘yicha qizarish (To'g'ri javob)
+* oqsoqlanib yurish
+* Xomans simptomi
+* oyoqlarning sovushi
+100. Lerish sindromiga xos bo‘lmagan simptom:
 * oyoq venalarini kengayishi (To'g'ri javob)
 * oqsoqlanib yurish
 * impotentsiya
