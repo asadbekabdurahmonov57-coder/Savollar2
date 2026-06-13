@@ -402,72 +402,91 @@
         selectedAnswers = new Array(activeQuestions.length).fill(null); 
     }
 
-    // ------------------------- PARSER -------------------------
+    // ------------------------- YANGILANGAN TUZATILGAN PARSER -------------------------
     function parseAllQuestions(fullText) {
         const lines = fullText.split(/\r?\n/);
         const questions = [];
-        let i = 0;
-        const totalLines = lines.length;
-
-        // Oldindan saqlangan admin javoblari borligini tekshirish
+        
         let localSaved = localStorage.getItem('admin_correct_answers');
         let savedAnswersMap = localSaved ? JSON.parse(localSaved) : null;
 
-        while (i < totalLines) {
+        let currentQuestion = null;
+
+        for (let i = 0; i < lines.length; i++) {
             let line = lines[i].trim();
-            const questionMatch = line.match(/^(\d+)\.\s+(.*)/);
+            if (line === "") continue;
+
+            // Savol raqamini aniqlash (Masalan: "701. Matn" yoki "701 Matn")
+            const questionMatch = line.match(/^(\d+)[\.\s]+(.*)/);
+
             if (questionMatch) {
-                const questionNumber = parseInt(questionMatch[1], 10);
-                const questionText = questionMatch[2].trim();
-                const options = [];
-                let correctAnswer = null;
-                i++;
-                while (i < totalLines) {
-                    let optLine = lines[i].trim();
-                    if (optLine === "") {
-                        i++;
-                        continue;
-                    }
-                    if (optLine.match(/^\d+\.\s+/)) {
-                        break;
-                    }
-                    
-                    let isCorrect = optLine.toLowerCase().includes("to'g'ri") || optLine.toLowerCase().includes("to‘g‘ri") || optLine.toLowerCase().includes("to’g’ri");
-                    let cleanOpt = optLine.replace(/^\[\*/, '').replace(/^\*/, '').replace(/^•/, '').trim();
-                    
-                    cleanOpt = cleanOpt.replace(/\s*\(?to[‘'’]g[‘'’]ri\s+javob\)?/gi, '');
-                    cleanOpt = cleanOpt.replace(/\{\.mark\}/g, '').replace(/\]/g, '').trim();
-                    
-                    if (cleanOpt === "") cleanOpt = optLine.replace(/^\*/, '').trim();
-                    if (cleanOpt !== "") {
-                        options.push(cleanOpt);
-                        if (isCorrect) {
-                            correctAnswer = cleanOpt;
-                        }
-                    }
-                    i++;
+                // Agar eski yig'ilayotgan savol bo'lsa, uni bazaga qo'shamiz
+                if (currentQuestion && currentQuestion.options.length > 0) {
+                    processAndPushQuestion(currentQuestion, savedAnswersMap, questions);
                 }
 
-                // Agar ushbu savol uchun brauzerda admin javobi saqlangan bo'lsa, o'shani olamiz
-                if (savedAnswersMap && savedAnswersMap[questionNumber] !== undefined) {
-                    correctAnswer = savedAnswersMap[questionNumber];
-                } else if (correctAnswer === null && options.length > 0) {
-                    correctAnswer = options[0];
-                }
+                // Yangi savol ob'ektini yaratamiz
+                currentQuestion = {
+                    id: parseInt(questionMatch[1], 10),
+                    text: questionMatch[2].trim(),
+                    options: []
+                };
+            } else if (currentQuestion) {
+                // Agar qator savol raqami bo'lmasa, demak u variant
+                let isCorrect = line.toLowerCase().includes("to'g'ri") || line.toLowerCase().includes("to‘g‘ri") || line.toLowerCase().includes("to’g’ri");
+                
+                // Ortiqcha belgilarni tozalash
+                let cleanOpt = line.replace(/^\[\*/, '').replace(/^\*/, '').replace(/^•/, '').trim();
+                cleanOpt = cleanOpt.replace(/\s*\(?to[‘'’]g[‘'’]ri\s+javob(\s+emas)?\)?/gi, (match) => {
+                    if (match.toLowerCase().includes("emas")) return match; // "to'g'ri javob emas" jumlalariga tegmaymiz
+                    return '';
+                });
+                cleanOpt = cleanOpt.replace(/\{\.mark\}/g, '').replace(/\]/g, '').trim();
 
-                if (options.length > 0) {
-                    questions.push({
-                        id: questionNumber,
-                        text: questionText,
-                        options: options,
-                        correctAnswer: correctAnswer
+                if (cleanOpt === "") cleanOpt = line.replace(/^\*/, '').trim();
+                
+                if (cleanOpt !== "") {
+                    currentQuestion.options.push({
+                        text: cleanOpt,
+                        isCorrect: isCorrect
                     });
                 }
-            } else {
-                i++;
             }
         }
+
+        // Eng oxirgi qolgan savolni ham qo'shib qo'yamiz
+        if (currentQuestion && currentQuestion.options.length > 0) {
+            processAndPushQuestion(currentQuestion, savedAnswersMap, questions);
+        }
+
         return questions;
+    }
+
+    // Savolni yakuniy tahlil qilib massivga qo'shish funksiyasi
+    function processAndPushQuestion(qObj, savedAnswersMap, targetArray) {
+        let correctAnswer = null;
+        let optTexts = [];
+
+        qObj.options.forEach(opt => {
+            optTexts.push(opt.text);
+            if (opt.isCorrect) {
+                correctAnswer = opt.text;
+            }
+        });
+
+        // Agar admin tomonidan o'zgartirilgan bo'lsa
+        if (savedAnswersMap && savedAnswersMap[qObj.id] !== undefined) {
+            correctAnswer = savedAnswersMap[qObj.id];
+        } else if (correctAnswer === null && optTexts.length > 0) {
+            correctAnswer = optTexts[0]; // Hech biri to'g'ri deb belgilanmagan bo'lsa birinchisini oladi
+        }
+
+        targetArray.push({
+            id: qObj.id,
+            text: qObj.text,
+            options: optTexts,
+            correctAnswer: correctAnswer
+        });
     }
 
     function shuffleArray(arr) {
@@ -508,7 +527,7 @@
             html += `
                 <div class="question-card" data-qid="${q.id}" data-idx="${idx}">
                     <div class="question-header">
-                        <div class="question-text"><span style="font-weight:700;">${idx+1}.</span> ${escapeHtml(q.originalText)}</div>
+                        <div class="question-text"><span style="font-weight:700;">${idx+1}.</span> [ID: ${q.id}] ${escapeHtml(q.originalText)}</div>
                     </div>
                     <div class="options-area" id="options-area-${idx}">
                         ${shuffled.map((opt, optIdx) => `
