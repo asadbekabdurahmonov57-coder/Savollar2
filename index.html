@@ -252,23 +252,21 @@
                     if (optLine.match(/^\d+\.\s+/)) {
                         break;
                     }
-                    if (optLine.startsWith('*') || optLine.startsWith('[*') || optLine.startsWith('•')) {
-                        let isCorrect = optLine.includes("To'g'ri javob");
-                        let cleanOpt = optLine.replace(/^\[\*/, '').replace(/^\*/, '').replace(/^•/, '').trim();
-                        cleanOpt = cleanOpt.replace(/\(To'g'ri javob\)/g, '').replace(/To'g'ri javob/g, '');
-                        cleanOpt = cleanOpt.replace(/\{\.mark\}/g, '').replace(/\]/g, '').trim();
-                        if (cleanOpt === "") cleanOpt = optLine.replace(/^\*/, '').trim();
-                        if (cleanOpt !== "") {
-                            options.push(cleanOpt);
-                            if (isCorrect) {
-                                correctAnswer = cleanOpt;
-                            }
+                    
+                    // Quyidagi shart * belgisi bo'lsa ham, bo'lmasa ham qatorni variant sifatida o'qiydi
+                    let isCorrect = optLine.includes("To'g'ri javob");
+                    let cleanOpt = optLine.replace(/^\[\*/, '').replace(/^\*/, '').replace(/^•/, '').trim();
+                    cleanOpt = cleanOpt.replace(/\(To'g'ri javob\)/g, '').replace(/To'g'ri javob/g, '');
+                    cleanOpt = cleanOpt.replace(/\{\.mark\}/g, '').replace(/\]/g, '').trim();
+                    
+                    if (cleanOpt === "") cleanOpt = optLine.replace(/^\*/, '').trim();
+                    if (cleanOpt !== "") {
+                        options.push(cleanOpt);
+                        if (isCorrect) {
+                            correctAnswer = cleanOpt;
                         }
-                        i++;
-                    } 
-                    else {
-                        i++;
                     }
+                    i++;
                 }
                 if (correctAnswer === null && options.length > 0) {
                     console.warn(`Savol ${questionNumber} uchun "To'g'ri javob" belgisi topilmadi, birinchi variant belgilandi.`);
@@ -288,7 +286,6 @@
                 i++;
             }
         }
-        // TARTIBLANMAYDI – faylda qanday ketma-ketlikda uchrasa, shu holatda saqlanadi
         return questions;
     }
 
@@ -318,7 +315,6 @@
     let renderedCount = 100;        // faqat 100 ta savol ko‘rsatiladi
 
     function renderQuiz(questionsData) {
-        // faqat birinchi 100 tasini olish (tartib saqlanadi)
         const limited = questionsData.slice(0, renderedCount);
         const container = document.getElementById('quizRoot');
         if (!limited.length) {
@@ -352,7 +348,6 @@
         }
         container.innerHTML = html;
 
-        // Event listenerlar va javoblarni saqlash
         for (let idx = 0; idx < limited.length; idx++) {
             const q = limited[idx];
             const correctAns = q.correctAnswerText;
@@ -364,27 +359,22 @@
 
             radioInputs.forEach((radio) => {
                 radio.addEventListener('change', function(e) {
-                    // Agar bu savolga allaqachon javob berilgan bo'lsa, hech narsa qilma
                     if (selectedAnswers[idx] !== null) return;
 
-                    // Tozalash
                     optionDivs.forEach(div => {
                         div.classList.remove('correct-highlight', 'wrong-highlight');
                     });
                     const selectedVal = radio.value;
                     const isCorrect = (selectedVal === correctAns);
                     
-                    // Saqlash
                     selectedAnswers[idx] = selectedVal;
                     
-                    // To‘g‘ri javobni yashil qilish
                     optionDivs.forEach(div => {
                         const optVal = div.getAttribute('data-opt-val');
                         if (optVal === correctAns) {
                             div.classList.add('correct-highlight');
                         }
                     });
-                    // Tanlangan xato bo‘lsa, qizil
                     if (!isCorrect) {
                         const parentDiv = radio.closest('.option');
                         if (parentDiv) parentDiv.classList.add('wrong-highlight');
@@ -399,13 +389,11 @@
                         }
                     }
 
-                    // Javob tanlangandan so‘ng, barcha radio tugmalarni o‘chirish (boshqa tanlash imkoni yo‘q)
                     radioInputs.forEach(r => { r.disabled = true; });
                 });
             });
         }
         document.getElementById('footerStats').childNodes[0].nodeValue = `📊 Jami ${questionsData.length} ta savol yuklandi, lekin faqat birinchi ${limited.length} tasi ko‘rsatilmoqda. Javoblarni belgilang va natijani ko‘ring.`;
-        // Natija va reset tugmalarini ko‘rsatish
         const resultBtn = document.getElementById('resultBtn');
         const resetBtn = document.getElementById('resetBtn');
         if (resultBtn) resultBtn.style.display = 'inline-block';
@@ -434,20 +422,16 @@
         resultDisplay.scrollIntoView({ behavior: 'smooth' });
     }
 
-    // Testni qayta boshlash (qayta yuklash)
     async function resetQuiz() {
-        // Tozalash
         document.getElementById('quizRoot').innerHTML = `<div class="loader">📂 Test qayta boshlanmoqda...</div>`;
         const resultDisplay = document.getElementById('resultDisplay');
         resultDisplay.innerHTML = '';
         resultDisplay.style.display = 'none';
         document.getElementById('statusMessage').innerHTML = '⏳ testlar.txt fayli qayta yuklanmoqda...';
-        // Tugmalarni vaqtincha yashirish
         const resultBtn = document.getElementById('resultBtn');
         const resetBtn = document.getElementById('resetBtn');
         if (resultBtn) resultBtn.style.display = 'none';
         if (resetBtn) resetBtn.style.display = 'none';
-        // Qayta yuklash
         await loadAndStart();
     }
 
@@ -461,7 +445,6 @@
         }).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, c => c);
     }
 
-    // ------------------------- YUKLASH -------------------------
     async function loadAndStart() {
         const statusDiv = document.getElementById('statusMessage');
         const quizRoot = document.getElementById('quizRoot');
@@ -480,14 +463,13 @@
                 throw new Error('Hech qanday savol topilmadi.');
             }
             const shuffledFull = prepareQuestions(parsed);
-            activeQuestions = shuffledFull;   // to‘liq massiv (tartib saqlangan)
-            renderQuiz(activeQuestions);      // render faqat 100 tasini oladi
+            activeQuestions = shuffledFull;
+            renderQuiz(activeQuestions);
             statusDiv.innerHTML = `✅ ${parsed.length} ta savol yuklandi (faqat birinchi 100 tasi ko‘rsatilmoqda). Variantlar aralashtirildi.`;
         } catch (err) {
             console.error(err);
             statusDiv.innerHTML = `❌ Xatolik: ${err.message}`;
             quizRoot.innerHTML = `<div class="error-box">⚠️ testlar.txt faylini yuklab bo‘lmadi.<br>Sababi: ${err.message}<br><br>📌 Fayl nomi <strong>testlar.txt</strong> va u index.html bilan bir papkada ekanligini tekshiring.</div>`;
-            // tugmalarni yashirish
             const resultBtn = document.getElementById('resultBtn');
             const resetBtn = document.getElementById('resetBtn');
             if (resultBtn) resultBtn.style.display = 'none';
