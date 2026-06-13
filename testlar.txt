@@ -4168,4 +4168,4 @@ Siz taqdim etgan tibbiyotga oid test savollarining to‘g‘ri javoblari xuddi s
 * og‘riq
 * holsizlik
 * terlash
-* yiringli balg‘am (Toʻgʻri javob)
+* yiringli balg‘am
