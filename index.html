@@ -262,7 +262,6 @@
         <div class="sub">✅ testlar.txt fayli avtomatik yuklanadi. Variantlar aralashtiriladi.</div>
         <div class="sub">▶️ Javobni tanlang — to‘g‘ri javob <span style="color:#2b8c4a;">yashil</span>, xato javob <span style="color:#c93a3a;">qizil</span> rangda belgilanadi.</div>
         
-        <!-- ADMIN REJIM BILDIRISHNOMASI -->
         <div id="adminPanelInfo" class="admin-panel-info">
             <div>🛠️ Admin rejim faol: Variant ustiga bossangiz, o‘sha variant ushbu savol uchun to‘g‘ri javobga aylanadi.</div>
             <button id="exitAdminBtn" class="exit-admin-btn">❌ Admin rejimdan chiqish (Testni sinash)</button>
@@ -285,8 +284,9 @@
 
 <script>
     // ------------------------- GLOBAL -------------------------
-    let activeQuestions = [];       
-    let selectedAnswers = [];       
+    let baseQuestionsData = [];     // Fayldan olingan toza savollar va admin belgilagan variantlar (O'zgarmas baza)
+    let activeQuestions = [];       // Ekrandagi aralashtirilgan joriy savollar
+    let selectedAnswers = [];       // Foydalanuvchi tanlagan javoblar
     let isAdminMode = false;
     let titleClickCount = 0;
 
@@ -299,7 +299,7 @@
             document.getElementById('adminPanelInfo').style.display = 'block';
             document.getElementById('adminBadge').style.display = 'inline-block';
             document.getElementById('quizRoot').classList.add('admin-mode-active');
-            clearUserSelectionVisuals(); // Foydalanuvchi oldin belgilagan ranglarini tozalash
+            clearUserSelectionVisuals(); 
             refreshAdminVisuals();
             alert("🛠️ Admin rejim yoqildi! Endi variantlarni bosish orqali haqiqiy to'g'ri javoblarni o'zgartirishingiz mumkin.");
         }
@@ -308,20 +308,18 @@
     // Admin rejimdan chiqish tugmasi
     document.getElementById('exitAdminBtn').addEventListener('click', () => {
         isAdminMode = false;
-        titleClickCount = 0; // Hisoblagichni nollash
+        titleClickCount = 0; 
         document.getElementById('adminPanelInfo').style.display = 'none';
         document.getElementById('adminBadge').style.display = 'none';
         document.getElementById('quizRoot').classList.remove('admin-mode-active');
         
-        // Ekrandagi barcha admin yashil ranglarini tozalab, foydalanuvchi uchun test holatiga qaytarish
+        // Ekrandagi barcha admin yashil ranglarini tozalash
         activeQuestions.forEach((q, idx) => {
             const areaDiv = document.getElementById(`options-area-${idx}`);
             if (areaDiv) {
-                const optionDivs = areaDiv.querySelectorAll('.option');
-                optionDivs.forEach(div => {
-                    div.className = "option"; // Oddiy holatga qaytarish
+                areaDiv.querySelectorAll('.option').forEach(div => {
+                    div.className = "option"; 
                 });
-                // Radio tugmalarni va javob berish imkonini qayta ochish (agar oldin belgilanmagan bo'lsa)
                 if (selectedAnswers[idx] === null) {
                     areaDiv.querySelectorAll('input[type="radio"]').forEach(r => {
                         r.disabled = false;
@@ -330,7 +328,7 @@
                 }
             }
         });
-        alert("📋 Oddiy test rejimi faollashdi. Endi bemalol o'zingiz belgilagan yangi to'g'ri javoblarni test yechuvchi sifatida sinab ko'rishingiz mumkin!");
+        alert("📋 Oddiy test rejimi faollashdi. Admin belgilagan yangi javoblarni test yechuvchi sifatida sinab ko'rishingiz mumkin!");
     });
 
     // Admin rejimda vizual renderlash (To'g'ri javobni yangilab boradi)
@@ -368,7 +366,7 @@
                 });
             }
         });
-        selectedAnswers = new Array(activeQuestions.length).fill(null); // javoblarni ham qayta nollash
+        selectedAnswers = new Array(activeQuestions.length).fill(null); 
     }
 
     // ------------------------- PARSER -------------------------
@@ -438,6 +436,7 @@
         return arr;
     }
 
+    // Savollarni aralashtirish (Asosiy bazadagi admin belgilagan javob matni saqlanadi)
     function prepareQuestions(parsed) {
         return parsed.map(q => {
             const shuffledOpts = shuffleArray([...q.options]);
@@ -484,7 +483,7 @@
         }
         container.innerHTML = html;
 
-        // Kod hodisalarini ulash
+        // Hodisalarni ulash
         for (let idx = 0; idx < questionsData.length; idx++) {
             const areaDiv = document.getElementById(`options-area-${idx}`);
             if (!areaDiv) continue;
@@ -500,6 +499,12 @@
                         // ADMIN MODE: To'g'ri javobni o'zgartirish
                         if (targetRadio) targetRadio.checked = true;
                         qObj.correctAnswerText = clickedVal;
+                        
+                        // O'zgarishni asosiy o'zgarmas bazada (baseQuestionsData) ham saqlab qolish
+                        const baseQ = baseQuestionsData.find(b => b.id === qObj.id);
+                        if (baseQ) {
+                            baseQ.correctAnswer = clickedVal;
+                        }
                         refreshAdminVisuals();
                     } else {
                         // USER MODE: Oddiy test yechish
@@ -563,10 +568,14 @@
         resultDisplay.scrollIntoView({ behavior: 'smooth' });
     }
 
-    async function resetQuiz() {
+    // TESTNI QAYTA BOSHLASH (Admin kiritgan javoblar o'chib ketmaydi)
+    function resetQuiz() {
         document.getElementById('quizRoot').innerHTML = `<div class="loader">📂 Test qayta boshlanmoqda...</div>`;
         document.getElementById('resultDisplay').style.display = 'none';
-        await loadAndStart();
+        
+        // Faylni qayta yuklamasdan, mavjud xotiradagi (admin o'zgartirgan) bazadan savollarni qayta aralashtiramiz
+        activeQuestions = prepareQuestions(baseQuestionsData);
+        renderQuiz(activeQuestions);
     }
 
     function escapeHtml(str) {
@@ -574,6 +583,7 @@
         return str.replace(/[&<>]/g, m => m === '&' ? '&amp;' : m === '<' ? '&lt;' : '&gt;');
     }
 
+    // Birinchi marta kirilgandagina yuklanadigan funksiya
     async function loadAndStart() {
         const statusDiv = document.getElementById('statusMessage');
         try {
@@ -581,12 +591,12 @@
             if (!response.ok) throw new Error(`Fayl topilmadi.`);
             const fileText = await response.text();
             
-            const parsed = parseAllQuestions(fileText);
-            if (parsed.length === 0) throw new Error('Savollar topilmadi.');
+            baseQuestionsData = parseAllQuestions(fileText);
+            if (baseQuestionsData.length === 0) throw new Error('Savollar topilmadi.');
             
-            activeQuestions = prepareQuestions(parsed);
+            activeQuestions = prepareQuestions(baseQuestionsData);
             renderQuiz(activeQuestions);
-            statusDiv.innerHTML = `✅ ${parsed.length} ta savol yuklandi.`;
+            statusDiv.innerHTML = `✅ ${baseQuestionsData.length} ta savol yuklandi.`;
         } catch (err) {
             statusDiv.innerHTML = `❌ Xatolik: ${err.message}`;
         }
