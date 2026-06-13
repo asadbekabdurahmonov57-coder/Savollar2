@@ -253,12 +253,12 @@
                         break;
                     }
                     
-                    // Matnda har qanday ko'rinishdagi (To'g'ri javob) yozuvini aniqlash (katta/kichik harf va turli tutuq belgilari bilan)
+                    // Matnda har qanday ko'rinishdagi (To'g'ri javob) yozuvini aniqlash
                     let isCorrect = optLine.toLowerCase().includes("to'g'ri") || optLine.toLowerCase().includes("to‘g‘ri") || optLine.toLowerCase().includes("to’g’ri");
                     
                     let cleanOpt = optLine.replace(/^\[\*/, '').replace(/^\*/, '').replace(/^•/, '').trim();
                     
-                    // Barcha turdagi tutuq belgilari va qavslarni tozalash (To'g'ri javob, To‘g‘ri javob, To’g’ri javob)
+                    // Barcha turdagi tutuq belgilari va qavslarni tozalash
                     cleanOpt = cleanOpt.replace(/\s*\(?to[‘'’]g[‘'’]ri\s+javob\)?/gi, '');
                     cleanOpt = cleanOpt.replace(/\{\.mark\}/g, '').replace(/\]/g, '').trim();
                     
@@ -466,7 +466,7 @@
             const shuffledFull = prepareQuestions(parsed);
             activeQuestions = shuffledFull;
             renderQuiz(activeQuestions);
-            statusDiv.innerHTML = `✅ ${parsed.length} ta savol yuklandi. Variantlar aralashtirildi.`;
+            statusDiv.innerHTML = `✅ ${parsed.length} ta savol yuklandi. Variantlar aralashtiriladi.`;
         } catch (err) {
             console.error(err);
             statusDiv.innerHTML = `❌ Xatolik: ${err.message}`;
