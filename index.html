@@ -37,6 +37,8 @@
             margin: 0 0 6px 0;
             font-size: 1.8rem;
             color: #166b8f;
+            cursor: pointer;
+            user-select: none;
         }
         .sub {
             color: #3c708b;
@@ -51,6 +53,40 @@
             font-size: 0.85rem;
             font-weight: 500;
         }
+        
+        /* ADMIN PANEL STATUS */
+        .admin-panel-info {
+            display: none;
+            background: #fff3cd;
+            border: 2px dashed #ffc107;
+            border-radius: 20px;
+            padding: 12px;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #856404;
+        }
+        .admin-badge {
+            display: none;
+            background: #dc3545;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        .admin-mode-active .option {
+            cursor: pointer !important;
+            background: #fafafa;
+            border-color: #ced4da !important;
+        }
+        .admin-mode-active .option.admin-correct-choice {
+            background: #e2f0d9 !important;
+            border-color: #71b463 !important;
+        }
+
         .quiz-questions {
             display: flex;
             flex-direction: column;
@@ -208,9 +244,15 @@
 <body>
 <div class="quiz-container">
     <div class="header-card">
-        <h1>📋 Tibbiy test (Barcha savollar)</h1>
+        <h1 id="mainHeader">📋 Tibbiy test (Barcha savollar) <span id="adminBadge" class="admin-badge">ADMIN REJIM</span></h1>
         <div class="sub">✅ testlar.txt fayli avtomatik yuklanadi. Variantlar aralashtiriladi.</div>
-        <div class="sub">▶️ Javobni tanlang — to‘g‘ri javob <span style="color:#2b8c4a;">yashil</span>, xato javob <span style="color:#c93a3a;">qizil</span> rangda belgilanadi. Tanlanganidan keyin boshqa javob tanlash bloklanadi.</div>
+        <div class="sub">▶️ Javobni tanlang — to‘g‘ri javob <span style="color:#2b8c4a;">yashil</span>, xato javob <span style="color:#c93a3a;">qizil</span> rangda belgilanadi.</div>
+        
+        <!-- ADMIN REJIM BILDIRISHNOMASI -->
+        <div id="adminPanelInfo" class="admin-panel-info">
+            🛠️ Admin rejim faol: Variant ustiga bossangiz, o‘sha variant ushbu savol uchun to‘g‘ri javobga aylanadi.
+        </div>
+
         <div id="statusMessage" class="status-bar">⏳ testlar.txt fayli yuklanmoqda...</div>
     </div>
     <div id="quizRoot" class="quiz-questions">
@@ -227,7 +269,49 @@
 </div>
 
 <script>
-    // ------------------------- PARSER (blok asosida, tartiblanmaydi) -------------------------
+    // ------------------------- GLOBAL -------------------------
+    let activeQuestions = [];       
+    let selectedAnswers = [];       
+    let isAdminMode = false;
+    let titleClickCount = 0;
+
+    // Sarlavhaga ketma-ket 3 marta bosilganda Admin rejimini yoqish
+    document.getElementById('mainHeader').addEventListener('click', () => {
+        titleClickCount++;
+        if (titleClickCount === 3) {
+            isAdminMode = true;
+            document.getElementById('adminPanelInfo').style.display = 'block';
+            document.getElementById('adminBadge').style.display = 'inline-block';
+            document.getElementById('quizRoot').classList.add('admin-mode-active');
+            refreshAdminVisuals();
+            alert("🛠️ Admin rejim yoqildi! Endi variantlarni bosish orqali to'g'ri javobni o'zingiz belgilashingiz mumkin.");
+        }
+    });
+
+    // Admin rejimda vizual renderlash (To'g'ri javobni yangilab boradi)
+    function refreshAdminVisuals() {
+        if (!isAdminMode) return;
+        activeQuestions.forEach((q, idx) => {
+            const areaDiv = document.getElementById(`options-area-${idx}`);
+            if (!areaDiv) return;
+            const optionDivs = areaDiv.querySelectorAll('.option');
+            const radioInputs = areaDiv.querySelectorAll('input[type="radio"]');
+            
+            radioInputs.forEach(r => r.disabled = false);
+            
+            optionDivs.forEach(div => {
+                div.className = "option"; 
+                const optVal = div.getAttribute('data-opt-val');
+                if (optVal === q.correctAnswerText) {
+                    div.classList.add('admin-correct-choice');
+                    const rad = div.querySelector('input[type="radio"]');
+                    if (rad) rad.checked = true;
+                }
+            });
+        });
+    }
+
+    // ------------------------- PARSER -------------------------
     function parseAllQuestions(fullText) {
         const lines = fullText.split(/\r?\n/);
         const questions = [];
@@ -253,12 +337,9 @@
                         break;
                     }
                     
-                    // Matnda har qanday ko'rinishdagi (To'g'ri javob) yozuvini aniqlash
                     let isCorrect = optLine.toLowerCase().includes("to'g'ri") || optLine.toLowerCase().includes("to‘g‘ri") || optLine.toLowerCase().includes("to’g’ri");
-                    
                     let cleanOpt = optLine.replace(/^\[\*/, '').replace(/^\*/, '').replace(/^•/, '').trim();
                     
-                    // Barcha turdagi tutuq belgilari va qavslarni tozalash
                     cleanOpt = cleanOpt.replace(/\s*\(?to[‘'’]g[‘'’]ri\s+javob\)?/gi, '');
                     cleanOpt = cleanOpt.replace(/\{\.mark\}/g, '').replace(/\]/g, '').trim();
                     
@@ -272,7 +353,6 @@
                     i++;
                 }
                 if (correctAnswer === null && options.length > 0) {
-                    console.warn(`Savol ${questionNumber} uchun "To'g'ri javob" belgisi topilmadi, birinchi variant belgilandi.`);
                     correctAnswer = options[0];
                 }
                 if (options.length > 0) {
@@ -282,8 +362,6 @@
                         options: options,
                         correctAnswer: correctAnswer
                     });
-                } else {
-                    console.warn(`Savol ${questionNumber} variantlarsiz qoldi, o‘tkazib yuborildi.`);
                 }
             } else {
                 i++;
@@ -312,10 +390,7 @@
         });
     }
 
-    // ------------------------- GLOBAL -------------------------
-    let activeQuestions = [];       // barcha savollar (to‘liq)
-    let selectedAnswers = [];       // har bir indeks uchun tanlangan javob matni (yoki null)
-
+    // ------------------------- RENDER -------------------------
     function renderQuiz(questionsData) {
         const container = document.getElementById('quizRoot');
         if (!questionsData.length) {
@@ -349,55 +424,63 @@
         }
         container.innerHTML = html;
 
+        // Hodisalar mantiqi
         for (let idx = 0; idx < questionsData.length; idx++) {
-            const q = questionsData[idx];
-            const correctAns = q.correctAnswerText;
             const areaDiv = document.getElementById(`options-area-${idx}`);
             if (!areaDiv) continue;
-            const radioInputs = areaDiv.querySelectorAll('input[type="radio"]');
             const optionDivs = areaDiv.querySelectorAll('.option');
-            const feedbackSpan = document.getElementById(`fb-${idx}`);
 
-            radioInputs.forEach((radio) => {
-                radio.addEventListener('change', function(e) {
-                    if (selectedAnswers[idx] !== null) return;
+            optionDivs.forEach((optDiv) => {
+                optDiv.addEventListener('click', function(e) {
+                    const targetRadio = optDiv.querySelector('input[type="radio"]');
+                    const clickedVal = optDiv.getAttribute('data-opt-val');
+                    const qObj = activeQuestions[idx];
 
-                    const selectedVal = radio.value;
-                    const isCorrect = (selectedVal === correctAns);
-                    
-                    selectedAnswers[idx] = selectedVal;
-                    
-                    optionDivs.forEach(div => {
-                        const optVal = div.getAttribute('data-opt-val');
-                        if (optVal === correctAns) {
-                            div.classList.add('correct-highlight');
+                    if (isAdminMode) {
+                        // ADMIN MODE: Tanlangan javobni haqiqiy to'g'ri javob deb belgilash
+                        if (targetRadio) targetRadio.checked = true;
+                        qObj.correctAnswerText = clickedVal;
+                        refreshAdminVisuals();
+                    } else {
+                        // USER MODE: Oddiy test yechish mantiqi
+                        if (selectedAnswers[idx] !== null) return;
+                        if (targetRadio) targetRadio.checked = true;
+
+                        const correctAns = qObj.correctAnswerText;
+                        const isCorrect = (clickedVal === correctAns);
+                        selectedAnswers[idx] = clickedVal;
+
+                        optionDivs.forEach(div => {
+                            if (div.getAttribute('data-opt-val') === correctAns) {
+                                div.classList.add('correct-highlight');
+                            }
+                        });
+                        if (!isCorrect) {
+                            optDiv.classList.add('wrong-highlight');
                         }
-                    });
-                    
-                    if (!isCorrect) {
-                        const parentDiv = radio.closest('.option');
-                        if (parentDiv) parentDiv.classList.add('wrong-highlight');
-                    }
-                    
-                    if (feedbackSpan) {
-                        if (isCorrect) {
-                            feedbackSpan.innerHTML = '✅ To‘g‘ri javob!';
-                            feedbackSpan.style.color = '#1e6f3f';
-                        } else {
-                            feedbackSpan.innerHTML = `❌ Xato. To‘g‘ri javob: “${escapeHtml(correctAns)}”`;
-                            feedbackSpan.style.color = '#b13b3b';
-                        }
-                    }
 
-                    radioInputs.forEach(r => { r.disabled = true; });
+                        const feedbackSpan = document.getElementById(`fb-${idx}`);
+                        if (feedbackSpan) {
+                            if (isCorrect) {
+                                feedbackSpan.innerHTML = '✅ To‘g‘ri javob!';
+                                feedbackSpan.style.color = '#1e6f3f';
+                            } else {
+                                feedbackSpan.innerHTML = `❌ Xato. To‘g‘ri javob: “${escapeHtml(correctAns)}”`;
+                                feedbackSpan.style.color = '#b13b3b';
+                            }
+                        }
+
+                        areaDiv.querySelectorAll('input[type="radio"]').forEach(r => r.disabled = true);
+                    }
                 });
             });
         }
+
         document.getElementById('footerStats').childNodes[0].nodeValue = `📊 Jami ${questionsData.length} ta savol yuklandi. Javoblarni belgilang va natijani ko‘ring.`;
-        const resultBtn = document.getElementById('resultBtn');
-        const resetBtn = document.getElementById('resetBtn');
-        if (resultBtn) resultBtn.style.display = 'inline-block';
-        if (resetBtn) resetBtn.style.display = 'inline-block';
+        if (document.getElementById('resultBtn')) document.getElementById('resultBtn').style.display = 'inline-block';
+        if (document.getElementById('resetBtn')) document.getElementById('resetBtn').style.display = 'inline-block';
+        
+        if (isAdminMode) refreshAdminVisuals();
     }
 
     function showResults() {
@@ -410,79 +493,49 @@
         }
         let correctCount = 0;
         for (let i = 0; i < total; i++) {
-            const userAnswer = selectedAnswers[i];
-            if (userAnswer && activeQuestions[i] && userAnswer === activeQuestions[i].correctAnswerText) {
+            if (selectedAnswers[i] && activeQuestions[i] && selectedAnswers[i] === activeQuestions[i].correctAnswerText) {
                 correctCount++;
             }
         }
-        const incorrectCount = total - correctCount;
         const percent = Math.round((correctCount / total) * 100);
         resultDisplay.style.display = 'inline-block';
-        resultDisplay.innerHTML = `📊 Natija: ${correctCount} ta to‘g‘ri, ${incorrectCount} ta noto‘g‘ri (jami ${total} ta). Ball: ${percent}%`;
+        resultDisplay.innerHTML = `📊 Natija: ${correctCount} ta to‘g‘ri, ${total - correctCount} ta noto‘g‘ri (jami ${total} ta). Ball: ${percent}%`;
         resultDisplay.scrollIntoView({ behavior: 'smooth' });
     }
 
     async function resetQuiz() {
         document.getElementById('quizRoot').innerHTML = `<div class="loader">📂 Test qayta boshlanmoqda...</div>`;
-        const resultDisplay = document.getElementById('resultDisplay');
-        resultDisplay.innerHTML = '';
-        resultDisplay.style.display = 'none';
-        document.getElementById('statusMessage').innerHTML = '⏳ testlar.txt fayli qayta yuklanmoqda...';
-        const resultBtn = document.getElementById('resultBtn');
-        const resetBtn = document.getElementById('resetBtn');
-        if (resultBtn) resultBtn.style.display = 'none';
-        if (resetBtn) resetBtn.style.display = 'none';
+        document.getElementById('resultDisplay').style.display = 'none';
         await loadAndStart();
     }
 
     function escapeHtml(str) {
         if (!str) return '';
-        return str.replace(/[&<>]/g, function(m) {
-            if (m === '&') return '&amp;';
-            if (m === '<') return '&lt;';
-            if (m === '>') return '&gt;';
-            return m;
-        }).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, c => c);
+        return str.replace(/[&<>]/g, m => m === '&' ? '&amp;' : m === '<' ? '&lt;' : '&gt;');
     }
 
     async function loadAndStart() {
         const statusDiv = document.getElementById('statusMessage');
-        const quizRoot = document.getElementById('quizRoot');
         try {
-            statusDiv.innerHTML = '⏳ testlar.txt fayli yuklanmoqda (katta hajm, biroz kuting)...';
             const response = await fetch('testlar.txt');
-            if (!response.ok) {
-                throw new Error(`Fayl topilmadi (HTTP ${response.status}). testlar.txt fayli index.html bilan bir papkada bo‘lishi kerak.`);
-            }
+            if (!response.ok) throw new Error(`Fayl topilmadi.`);
             const fileText = await response.text();
-            if (!fileText || fileText.trim().length === 0) {
-                throw new Error('Fayl bo‘sh, hech qanday savol yo‘q.');
-            }
+            
             const parsed = parseAllQuestions(fileText);
-            if (parsed.length === 0) {
-                throw new Error('Hech qanday savol topilmadi.');
-            }
-            const shuffledFull = prepareQuestions(parsed);
-            activeQuestions = shuffledFull;
+            if (parsed.length === 0) throw new Error('Savollar topilmadi.');
+            
+            activeQuestions = prepareQuestions(parsed);
             renderQuiz(activeQuestions);
-            statusDiv.innerHTML = `✅ ${parsed.length} ta savol yuklandi. Variantlar aralashtiriladi.`;
+            statusDiv.innerHTML = `✅ ${parsed.length} ta savol yuklandi.`;
         } catch (err) {
-            console.error(err);
             statusDiv.innerHTML = `❌ Xatolik: ${err.message}`;
-            quizRoot.innerHTML = `<div class="error-box">⚠️ testlar.txt faylini yuklab bo‘lmadi.<br>Sababi: ${err.message}<br><br>📌 Fayl nomi <strong>testlar.txt</strong> va u index.html bilan bir papkada ekanligini tekshiring.</div>`;
-            const resultBtn = document.getElementById('resultBtn');
-            const resetBtn = document.getElementById('resetBtn');
-            if (resultBtn) resultBtn.style.display = 'none';
-            if (resetBtn) resetBtn.style.display = 'none';
         }
     }
 
     window.addEventListener('DOMContentLoaded', () => {
         loadAndStart();
-        const resultBtn = document.getElementById('resultBtn');
-        const resetBtn = document.getElementById('resetBtn');
-        if (resultBtn) resultBtn.addEventListener('click', showResults);
-        if (resetBtn) resetBtn.addEventListener('click', resetQuiz);
+        document.getElementById('resultBtn').addEventListener('click', showResults);
+        document.getElementById('resetBtn').addEventListener('click', resetQuiz);
     });
 </script>
 </body>
