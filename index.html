@@ -337,8 +337,8 @@
                     </div>
                     <div class="options-area" id="options-area-${idx}">
                         ${shuffled.map((opt, optIdx) => `
-                            <div class="option" data-opt-val="${escapeHtml(opt)}">
-                                <input type="radio" name="${groupId}" value="${escapeHtml(opt)}" id="opt_${idx}_${optIdx}" class="option-radio">
+                            <div class="option" data-opt-val="${escapeHtml(opt.trim())}">
+                                <input type="radio" name="${groupId}" value="${escapeHtml(opt.trim())}" id="opt_${idx}_${optIdx}" class="option-radio">
                                 <label for="opt_${idx}_${optIdx}" class="option-text">${escapeHtml(opt)}</label>
                             </div>
                         `).join('')}
@@ -351,7 +351,7 @@
 
         for (let idx = 0; idx < questionsData.length; idx++) {
             const q = questionsData[idx];
-            const correctAns = q.correctAnswerText;
+            const correctAns = q.correctAnswerText ? q.correctAnswerText.trim() : "";
             const areaDiv = document.getElementById(`options-area-${idx}`);
             if (!areaDiv) continue;
             const radioInputs = areaDiv.querySelectorAll('input[type="radio"]');
@@ -365,7 +365,7 @@
                     optionDivs.forEach(div => {
                         div.classList.remove('correct-highlight', 'wrong-highlight');
                     });
-                    const selectedVal = radio.value;
+                    const selectedVal = radio.value.trim();
                     const isCorrect = (selectedVal === correctAns);
                     
                     selectedAnswers[idx] = selectedVal;
@@ -412,7 +412,7 @@
         let correctCount = 0;
         for (let i = 0; i < total; i++) {
             const userAnswer = selectedAnswers[i];
-            if (userAnswer && activeQuestions[i] && userAnswer === activeQuestions[i].correctAnswerText) {
+            if (userAnswer && activeQuestions[i] && userAnswer === (activeQuestions[i].correctAnswerText ? activeQuestions[i].correctAnswerText.trim() : "")) {
                 correctCount++;
             }
         }
