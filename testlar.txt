@@ -4095,34 +4095,34 @@ Siz taqdim etgan tibbiyotga oid test savollarining to‘g‘ri javoblari xuddi s
 * ishqor (To‘g‘ri javob)
 * suv
 * alkogol
-855.  Eng ko‘p zararlanish:
+855. Eng ko‘p zararlanish:
 * hammasi
 * kardiya
 * fiziologik torayishlar (To‘g‘ri javob)
 * abdominal
-856.  Diafragma yorilishi:
+856. Diafragma yorilishi:
 * og‘riq
 * organ ko‘chishi
 * nafas susayishi
 * barchasi (To‘g‘ri javob)
-857.  Hiatal churra EMAS:
+857. Hiatal churra EMAS:
 * reflyuks
 * qisilish
 * yara
 * ekstrakardial stenokardiya (To‘g‘ri javob)
-858.  Mediastinal o‘sma:
+858. Mediastinal o‘sma:
 * MSKT (To‘g‘ri javob)
-859.  Trendelenburg:
+859. Trendelenburg:
 * varikoz (To‘g‘ri javob)
-860.  Varikoz sababi EMAS:
+860. Varikoz sababi EMAS:
 * homiladorlik
 * klapan yetishmovchiligi
 * limfadenit (To‘g‘ri javob)
-861.  Skleroterapiya qilinmaydi:
+861. Skleroterapiya qilinmaydi:
 * chuqur venalar buzilganda (To‘g‘ri javob)
-862.  Varikoz EMAS:
+862. Varikoz EMAS:
 * takror oqsoqlik (To‘g‘ri javob)
-863.  Magistral venalar:
+863. Magistral venalar:
 * operatsiya (To‘g‘ri javob)
 864. Chuqur tromboflebit:
 * keskin shish + og‘riq (To‘g‘ri javob)
