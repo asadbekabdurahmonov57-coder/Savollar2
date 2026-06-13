@@ -46,25 +46,25 @@
 * leyomioma
 * fibroma
 
-110 O‘tkir mezenterial trombozni klinik kurinishi (noto‘g‘risini ko‘rsating):
-qorin sohasidagi intensiv og‘riq
-qayt qilish
-qon aralash najas ajralishi
-doskasimon qorin (To'g'ri javob)
+110. O‘tkir mezenterial trombozni klinik kurinishi (noto‘g‘risini ko‘rsating):
+* qorin sohasidagi intensiv og‘riq
+* qayt qilish
+* qon aralash najas ajralishi
+* doskasimon qorin (To'g'ri javob)
 
-111 Plevrani surunkali empiemasini asosiy davolash usuli:
-xirurgik (plevrektomiya, o‘pka dekortikatsiyasi) (To'g'ri javob)
-konservativ
-punktsion
-plevral bo‘shliqni drenajlash
+111. Plevrani surunkali empiemasini asosiy davolash usuli:
+* xirurgik (plevrektomiya, o‘pka dekortikatsiyasi) (To'g'ri javob)
+* konservativ
+* punktsion
+* plevral bo‘shliqni drenajlash
 
-112 Bronxoektaz kasalligini asosiy klinik simptomlarini ko‘rsating.
+112. Bronxoektaz kasalligini asosiy klinik simptomlarini ko‘rsating.
 yiringli balg‘am bilan yo‘tal, ko‘proq kechkurun
 yiringli balg‘am bilan yo‘tal, ko‘proq ertalab (To'g'ri javob)
 quruq yo‘tal
 bo‘g‘ilish
 
-113 Ko‘ks oralig‘ining o‘rta qismida ko‘p uchraydigan o‘sma va kistalarni toping.
+113. Ko‘ks oralig‘ining o‘rta qismida ko‘p uchraydigan o‘sma va kistalarni toping.
 to‘sh orti buqog‘i, timoma, limfoma
 dermoid kista, mezenximal o‘sma
 bronxogen kista, enterogen kista (To'g'ri javob)
