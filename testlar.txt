@@ -4089,8 +4089,8 @@ Siz taqdim etgan tibbiyotga oid test savollarining to‘g‘ri javoblari xuddi s
 * axalaziya
 * kardiospazm
 * ezofagit
-* katta divertikul (To‘g‘ri javob)
-854. Qizilo‘ngach zararlanishi:
+* katta divertikul 
+854.  Qizilo‘ngach zararlanishi:
 * kislota
 * ishqor (To‘g‘ri javob)
 * suv
