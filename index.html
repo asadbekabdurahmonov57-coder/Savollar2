@@ -26,12 +26,12 @@
             margin-bottom: 32px;
             box-shadow: 0 6px 14px rgba(0, 0, 0, 0.03);
             text-align: center;
-            border: 1px solid #e2edf5;
             position: sticky;
             top: 0;
             z-index: 10;
             background: rgba(255,255,255,0.95);
             backdrop-filter: blur(4px);
+            border: 1px solid #e2edf5;
         }
         h1 {
             margin: 0 0 6px 0;
@@ -54,17 +54,31 @@
             font-weight: 500;
         }
         
-        /* ADMIN PANEL STATUS */
+        /* ADMIN PANEL STATUS VA TUGMASI */
         .admin-panel-info {
             display: none;
             background: #fff3cd;
             border: 2px dashed #ffc107;
             border-radius: 20px;
-            padding: 12px;
+            padding: 15px;
             margin-top: 15px;
             text-align: center;
-            font-weight: bold;
             color: #856404;
+        }
+        .exit-admin-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 6px 16px;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .exit-admin-btn:hover {
+            background: #c82333;
         }
         .admin-badge {
             display: none;
@@ -250,7 +264,8 @@
         
         <!-- ADMIN REJIM BILDIRISHNOMASI -->
         <div id="adminPanelInfo" class="admin-panel-info">
-            🛠️ Admin rejim faol: Variant ustiga bossangiz, o‘sha variant ushbu savol uchun to‘g‘ri javobga aylanadi.
+            <div>🛠️ Admin rejim faol: Variant ustiga bossangiz, o‘sha variant ushbu savol uchun to‘g‘ri javobga aylanadi.</div>
+            <button id="exitAdminBtn" class="exit-admin-btn">❌ Admin rejimdan chiqish (Testni sinash)</button>
         </div>
 
         <div id="statusMessage" class="status-bar">⏳ testlar.txt fayli yuklanmoqda...</div>
@@ -277,15 +292,45 @@
 
     // Sarlavhaga ketma-ket 3 marta bosilganda Admin rejimini yoqish
     document.getElementById('mainHeader').addEventListener('click', () => {
+        if (isAdminMode) return;
         titleClickCount++;
         if (titleClickCount === 3) {
             isAdminMode = true;
             document.getElementById('adminPanelInfo').style.display = 'block';
             document.getElementById('adminBadge').style.display = 'inline-block';
             document.getElementById('quizRoot').classList.add('admin-mode-active');
+            clearUserSelectionVisuals(); // Foydalanuvchi oldin belgilagan ranglarini tozalash
             refreshAdminVisuals();
-            alert("🛠️ Admin rejim yoqildi! Endi variantlarni bosish orqali to'g'ri javobni o'zingiz belgilashingiz mumkin.");
+            alert("🛠️ Admin rejim yoqildi! Endi variantlarni bosish orqali haqiqiy to'g'ri javoblarni o'zgartirishingiz mumkin.");
         }
+    });
+
+    // Admin rejimdan chiqish tugmasi
+    document.getElementById('exitAdminBtn').addEventListener('click', () => {
+        isAdminMode = false;
+        titleClickCount = 0; // Hisoblagichni nollash
+        document.getElementById('adminPanelInfo').style.display = 'none';
+        document.getElementById('adminBadge').style.display = 'none';
+        document.getElementById('quizRoot').classList.remove('admin-mode-active');
+        
+        // Ekrandagi barcha admin yashil ranglarini tozalab, foydalanuvchi uchun test holatiga qaytarish
+        activeQuestions.forEach((q, idx) => {
+            const areaDiv = document.getElementById(`options-area-${idx}`);
+            if (areaDiv) {
+                const optionDivs = areaDiv.querySelectorAll('.option');
+                optionDivs.forEach(div => {
+                    div.className = "option"; // Oddiy holatga qaytarish
+                });
+                // Radio tugmalarni va javob berish imkonini qayta ochish (agar oldin belgilanmagan bo'lsa)
+                if (selectedAnswers[idx] === null) {
+                    areaDiv.querySelectorAll('input[type="radio"]').forEach(r => {
+                        r.disabled = false;
+                        r.checked = false;
+                    });
+                }
+            }
+        });
+        alert("📋 Oddiy test rejimi faollashdi. Endi bemalol o'zingiz belgilagan yangi to'g'ri javoblarni test yechuvchi sifatida sinab ko'rishingiz mumkin!");
     });
 
     // Admin rejimda vizual renderlash (To'g'ri javobni yangilab boradi)
@@ -309,6 +354,21 @@
                 }
             });
         });
+    }
+
+    // Foydalanuvchi ishlagan javoblar rangini admin rejimga o'tishda tozalash
+    function clearUserSelectionVisuals() {
+        activeQuestions.forEach((q, idx) => {
+            const areaDiv = document.getElementById(`options-area-${idx}`);
+            if (areaDiv) {
+                const feedbackSpan = document.getElementById(`fb-${idx}`);
+                if (feedbackSpan) feedbackSpan.innerHTML = '';
+                areaDiv.querySelectorAll('.option').forEach(div => {
+                    div.className = "option";
+                });
+            }
+        });
+        selectedAnswers = new Array(activeQuestions.length).fill(null); // javoblarni ham qayta nollash
     }
 
     // ------------------------- PARSER -------------------------
@@ -424,7 +484,7 @@
         }
         container.innerHTML = html;
 
-        // Hodisalar mantiqi
+        // Kod hodisalarini ulash
         for (let idx = 0; idx < questionsData.length; idx++) {
             const areaDiv = document.getElementById(`options-area-${idx}`);
             if (!areaDiv) continue;
@@ -437,12 +497,12 @@
                     const qObj = activeQuestions[idx];
 
                     if (isAdminMode) {
-                        // ADMIN MODE: Tanlangan javobni haqiqiy to'g'ri javob deb belgilash
+                        // ADMIN MODE: To'g'ri javobni o'zgartirish
                         if (targetRadio) targetRadio.checked = true;
                         qObj.correctAnswerText = clickedVal;
                         refreshAdminVisuals();
                     } else {
-                        // USER MODE: Oddiy test yechish mantiqi
+                        // USER MODE: Oddiy test yechish
                         if (selectedAnswers[idx] !== null) return;
                         if (targetRadio) targetRadio.checked = true;
 
