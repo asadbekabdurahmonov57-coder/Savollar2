@@ -1803,3 +1803,679 @@
 * jigar oldida (pregepatik)
 * jigar ortida (postgepatik)
 * aralash blok
+
+400. Qaysi nuqsonda arterial bosim 150/0 mm.sim.ust bo‘lishi mumkin?
+* aortal klapan yetishmovchiligi (To'g'ri javob)
+* mitral klapan stenozi
+* mitral klapan yetishmovchiligi
+* aortal klapan stenozi
+
+401. Paradoksal disfagiya qanday holatlarda kuzatiladi?
+* kardiospazmda (To'g'ri javob)
+* qizilo‘ngachni chandikli torayishida
+* qizilo‘ngach divertikulida
+* qizilo‘ngach saratonida
+
+402. Kardiospazmning rentgenologik simptomatikasini belgilang.
+* barcha javoblar to‘g‘ri (To'g'ri javob)
+* qizilo‘ngach dilyatatsiyasi
+* kardiyani siqilishi
+* kardiya ustida kontrast massani tutilishi
+
+403. Rentgenologik diafragma yuqoriga ko‘tarilishi qaysi holat uchun xarakterli?
+* diafragma relaksatsiyasiga (To'g'ri javob)
+* diafragmani qizilo‘ngach qismida paraezofagial churraga
+* kardiospazmga
+* tug‘ma diafragma churrasiga
+
+404. Fallo tetradasiga xos bo‘lganini belgilang.
+* o‘pka arteriyasi stenozi, qorinchalar aro to‘siq defekti, aorta dekstropazitsiyasi, o‘ng qorincha gipertrofiyasi (To'g'ri javob)
+* o‘pka arteriyasi boshlanishi stenozi, bo‘lmachalar aro to‘siq deffekti, aorta o‘ng tomonda joylashishi, chap qorincha gipertrofiyasi
+* o‘pka arteriyasini boshlanishi stenozi, bo‘lmachalar aro to‘siq deffekti, aorta dekstrapozitsiyasi
+* ochik arterial yo‘lli
+
+405. “Ochiq arterial yo‘l”ni auskultativ belgisini ko‘rsating.
+* 2 qovurg‘a oralig‘ida to‘shdan chapda qo‘pol sistolo-diastolik shovqin (To'g'ri javob)
+* 3 qovurg‘a oralig‘ida to‘shdan o‘ngda sistolo-diastolik shovqin
+* yurak cho‘qqisida dag‘al sistolik shovqin
+* o‘pka arteriyasi ustida 2chi ton aktsenti
+
+406. Mitral yetishmovchilikda auskultativ manzara nima hisobiga hosil bo‘ladi?
+* 1chi ton susayishi, o‘pka arteriyasi ustida 2chi ton aktsenti, yurak uchida sistolik shovqin (To'g'ri javob)
+* 1chi ton kuchayishi, 2chi ton yo‘qolishi, chap 2 qovurg‘a oralig‘ida sistolik shovqin
+* 1chi ton susayishi, o‘pka arteriyasi ustida 2chi ton aktsenti, 2chi ton yo‘qligi
+* to‘shdan chapda 2 qovurg‘a oralig‘ida sistolo-diastolik shovqin
+
+407. Mitral stenozning qaysi asorati operatsiyaga qarshi ko‘rsatma hisoblanadi?
+* yurak yetishmovchiligi 4 funktsional sinf (To'g'ri javob)
+* klapan kaltsinozi
+* bakterial endokardit
+* yurak yetishmovchiligi 2 bosqich
+
+408. O‘pka gipertenziyasi rivojlanishida mitral yetishmovchilik uchun xarakterli EKG belgilarini ko‘rsating.
+* chap qorincha gipertrofiyasi (To'g'ri javob)
+* o‘ng qorincha va bo‘lmacha gipertrofiya belgilari
+* o‘ng qorincha miokardi ishemiyasi belgilari
+* yurak elektr ukini o‘ngga siljishi
+
+409. Blelok-Tausin operatsiyasida qaysi qon tomirlar orasida anastamoz xosil qilinadi?
+* o‘mrov osti va o‘pka arteriyasi (To'g'ri javob)
+* ko‘tariluvchi aorta va o‘ng o‘pka arteriyasi
+* umurtqa pog‘onasi va o‘mrov osti arteriyalar
+* ko‘tariluvchi aorta va chap o‘pka arteriyasi
+
+410. Qorin bo‘shlig‘i a’zolarining diafragma to‘sh-qovurg‘a sohasidagi tirqish orqali ko‘krak qafasiga chiqishi nima deb ataladi?
+* Morgani churrasi (To'g'ri javob)
+* Boxdalek churrasi
+* Grosse churrasi
+* Shmorl churrasi
+
+411. Yolg‘on diafragmal churralar bu:
+* churra qopini bo‘lmasligi (To'g'ri javob)
+* churra qopini bo‘lishi
+* Morgani churrasi
+* Larrey churrasi
+
+412. Diafragma relaksatsiyasi deganda nima tushuniladi?
+* Diafragmaning yupqalashishi va qorin bo‘shlig‘i a’zolari bilan birgalikda ko‘krak qafasiga siljishi (To'g'ri javob)
+* diafragma gumbazi tug‘ma deffekti
+* Boxdalek uchburchagi orqali qorin bo‘shlig‘i a’zolarining chiqishi
+* Diafragma yorilishi
+
+413. Paraezofagal churrali bemorlarning asosiy shikoyatlarini ko‘rsating.
+* ovqatdan keyingi to‘sh orqasidagi og‘riqlar, disfagiya (To'g'ri javob)
+* ko‘ngil aynashi, qusish, jig‘ildon qaynashi
+* kekirish
+* ochlikdagi og‘riqlar
+
+414. Qizilo‘ngach kuyishining o‘tkir bosqichini klinik ko‘rinishi (noto‘g‘ri javobni ko‘rsating)
+* qizilo‘ngach strikturasi (To'g'ri javob)
+* shok simptomlari
+* trexeobronxit
+* buyrak yetishmovchiligi
+
+415. Qizilo‘ngachni erta bujlash nechanchi sutkada boshlanadi?
+* 4-6 sutkada (To'g'ri javob)
+* 2-3 sutkada
+* 7-9 sutkada
+* 9-12 sutkada
+
+416. Kardia axalaziyasining simptomini aniqlovchi asosiy uzgarishni ko‘rsating.
+* yutingandan so‘ng kardial sfinkterni etarli bo‘shamasligi (To'g'ri javob)
+* kardial sfinkter gipertonusi
+* fiziologik kardiada bosim oshishi
+* reflyuks ezofagit
+
+417. Divertikul joylashishiga kura qanday turlarga bo‘linadi? (noto‘g‘ri javobni ko‘rsating)
+* diafragma osti (To'g'ri javob)
+* tsenker
+* bifurkatsion
+* epifrenal
+
+418. Bifurkatsion divertikulni klinik kechishi qanday?
+* ko‘pincha simptomsiz kechadi (To'g'ri javob)
+* kekirish
+* hiqichoq tutishi
+* bo‘yin yon tomonini chiqib turishi
+
+419. O‘tkir o‘pka abstsessi bu..
+* o‘pka to‘qimasi ma’lum qismining piogen kapsula bilan chemicallyangan yiring-chirikli parchalanishi (To'g'ri javob)
+* butun o‘pka yuzasida yoki ma’lum bir qismida demarkatsiya belgilarisiz yiring-chirikli nekroz
+* o‘pka to‘qimasi sekvestratsiya va chemicallyanish tendentsiyasi bilan yiring-chirikli nekrozi
+* o‘pka to‘qimasi piogen kapsulasiz yiringli parchalanishi
+
+420. O‘pka to‘qimasining yiringli jarayon rivojlanishida aspiratsion mexanizmida nimani tushiniladi?
+* infektsiyani bronx orqali o‘pkaga tushish (To'g'ri javob)
+* septik embol bilan infektsiyani o‘pka to‘qimasiga tushishi
+* krupoz pnevmoniya fonida chirish boshlanish
+* bronxni yot jism bilan berkilib kolishi
+
+421. O‘tkir o‘pka abstsessini asosiy rentgelogik simptomlarini ko‘rsating.
+* perifokal infiltratsiya va suyuqlik satxi bilan yumaloq bo‘shliq (To'g'ri javob)
+* yumalok soya, intensiv, gomogen, konturi aniq
+* yumaloq soya, aniq, to‘g‘ri chemicallyali
+* o‘pka to‘qimasini chemicallyasiz soyalanish
+
+422. O‘pka gangrenasini asosiy rentgenologik simptomlari qaysilar?
+* konturi noaniq mayda ko‘p bo‘shliqchalar bilan intensiv soyalanish (To'g'ri javob)
+* uchburchak shakldagi intensiv gomogen soya
+* yumaloq soya, intensiv, gomogen, aniq konturli
+* perifokal infiltratsiya va suyuqlik kursatkichli yumaloq bo‘shliq
+
+423. O‘pka bilan birga ko‘pincha qaysi a’zo exinokokk bilan zararlanadi?
+* jigar (To'g'ri javob)
+* taloq
+* buyrak
+* bosh miya
+
+424. Asoratlanmagan o‘pka exinokokkini rentgenologik belgilarini ko‘rsating.
+* gomogen yumaloq soya, aniq kontur bilan (To'g'ri javob)
+* perifokal infiltratsiya va suyuqlik kursatkichli yumaloq bo‘shliq
+* yulduzsimon nomogen soya, o‘pka ildizi tomon yunalgan
+* notekis chemicallyali o‘ng o‘pka pastki qismining soyalanishi
+
+425. O‘pka exinokokkida asosiy davolash taktikasi qanday?
+* operatsiya - exinokokkektomiya (To'g'ri javob)
+* konservativ davo, ximioterapiya
+* sklerozlovchi preparatlar yordamida exinokokk kistasi punktsiyasi
+* exinokokk kistasini drenajlash
+
+426. Plevra bo‘shlig‘iga exinokokk kistasining yorilishiga xarakterli klinik simptomlar (noto‘g‘ri javobni ko‘rsating)
+* axlat qorayishi (To'g'ri javob)
+* ko‘krak qafasida og‘riq
+* anafilaktik shok rivojlanishi
+* xansirash
+
+427. Spontan pnevmotoraksga xarakterli rentgenologik belgilar.
+* o‘pka kichrayishi, plevra bo‘shlig‘idaxavo bo‘lishi, ko‘ks oralig‘ini sog‘ tomonga siljishi (To'g'ri javob)
+* total gomogen soyalanish
+* total gomogen soyalanish, ko‘ks oralig‘ini sog‘ tomonga siljishi
+* ko‘ks oralig‘ini zaralangan tomonga siljishi
+
+428. Mexanik sariqlik etiologiyasiga quyida berilganlardan qaysi biri xos emas?
+* tug‘ma sferotsitoz (To'g'ri javob)
+* o‘t yo‘llari rivojlanishidagi tug‘ma nuqsonlar
+* o‘t tosh kasalligi
+* me’da osti bezi boshchasi o‘smasi
+
+429. Mexanik sariqlikda kuzatiladigan bioximik o‘zgarishlarni ko‘rsating.
+* qonda bog‘langan bilirubin oshishi, ishqoriy fosfataza oshgan (To'g'ri javob)
+* bog‘langan va erkin bilirubin oshishi
+* qonda erkin bilirubin oshishi, ishkoriy fosfataza o‘zgarmagan
+* transaminazalar oshishi
+
+430. Qaytalanuvchi sariqlikni nima bilan tushuntirish mumkin
+* xoledoxdagi ventil tosh (To'g'ri javob)
+* o‘t yo‘li toshi
+* jigardan tashkari o‘t yo‘li raki
+* umumiy o‘t yo‘lida tosh tiqilib qolishi
+
+431. Rezidual xoledoxolitiaz klinikasini belgilang.
+* o‘ng qovurg‘a ostida tez tez xurujli og‘riqlar,temperatura va qaltirash bilan sariqlik CHCHXGda- xoledoxda qolgan tosh (To'g'ri javob)
+* o‘ng qovurg‘a ostida doimiy va xurujli og‘riq, xolangiografiyada o‘t qopi yo‘lida uzun chultoq
+* o‘t okma yarasi, fistuloxolangiografiyada o‘t pufagi bo‘yinchasi qolib ketgan
+* o‘ng qovurg‘a ostida o‘tmas og‘riqlar
+
+432. Postxoletsistektomik sindromni rivojlanishiga quyidagilardan qaysi biri xos emas?
+* o‘n ikki barmok ichak yara kasalligi (To'g'ri javob)
+* pufak yo‘lining uzun cho‘ltog‘i
+* umumiy o‘t yo‘lida rezidual tosh
+* umumiy o‘t yoli stenozi
+
+433. Mexanik sariqligi bor bemorni operatsiyadan oldingi davrga tayorlashga quyida keltirilganlardan qaysi biri xos emas?
+* antikoagulyant terapiya (To'g'ri javob)
+* o‘t yo‘lini operatsiyadan oldingi dekompressiyasi
+* detoksikatsion terapiya, transfuzion terapiya
+* giperbarik oksigenatsiya
+
+434. Peptik yarani retsidivi ko‘proq qaysi operatsiyadan so‘ng rivojlanadi?
+* drenajlovchi operatsiya bilan vagotomiya (To'g'ri javob)
+* me’da 2\3 qismi rezektsiya
+* antrumektomiya bilan vagotomiya
+* selektiv vagotomiya
+
+435. Zollinger-Ellison sindromi bu qanday triada?
+* giperatsidlik, o‘n ikki barmoq ichak yarasi, pankreas o‘smasi (To'g'ri javob)
+* normaatsidlik, me’da yarasi, pankreas o‘smasi
+* axlorgidriya, o‘n ikki barmoq ichak yarasi, pankreas gastrinomasi
+* giperatsidlik, me’da yarasi, to‘g‘ri ichak yarasi
+
+436. Me’da operatsiyasidan keyingi kasalliklar tasnifi bo‘yicha Demping sindromi qaysi guruhga kiradi?
+* funktsional buzilishlar (To'g'ri javob)
+* mexanik buzilishlar
+* organiq buzilishlar
+* aralash buzilishlar
+
+437. Varikoz kasalligini dekompensatsiya bosqichiga qanday klinik ko‘rinish xarakterli emas?
+* to‘piq uvushishi (To'g'ri javob)
+* teri giperpigmentatsiya, qichish
+* to‘pik va tovon shishi
+* teri osti venalarini birdan kengayishi
+
+438. Delbe-Pertes sinamasi yordamida nimani aniqlash mumkin?
+* chukur vena o‘tkazuvchanligini (To'g'ri javob)
+* yuza venalarini o‘tkazuvchanligini
+* son arteriyalar o‘tkazuvchanligini
+* komunikant venalar o‘tkazuvchanligini
+
+439. Varikoz kasalligi asoratiga nima xarakterli emas?
+* to‘piq gangrenasi (To'g'ri javob)
+* trofik yara
+* kengaygan venalar tromboflebiti
+* varikoz tugunlardan qon ketishi
+
+440. Varikoz kasalligida ko‘rsatilgan davolash usullaridan qaysi birini qo‘llab bo‘lmaydi?
+* endarterektomiya (To'g'ri javob)
+* skleroterapiya
+* flebektomiya
+* konservativ davo
+
+441. Yuza venalar o‘tkir tromboziga qanday 3 simptom xos?
+* og‘riq, teri giperemiyasi va venalar bo‘ylab qattiqlanish (To'g'ri javob)
+* og‘riq, shish, teri tsianozi
+* og‘riq, teri giperemiyasi, musbat Xomans simptomi
+* og‘riq, teri tsianozi, monoparez
+
+442. Vena trombozi hosil bo‘lishida nima ahamiyatga ega emas?
+* bemor eshi (To'g'ri javob)
+* qon aylanishi sekinlashishi
+* giperkoagulyatsiya
+* endoteliy zararlanishi
+
+443. Varikoz kasalligi qaysi kasallik bilan differentsial diagnoz qilinmaydi:
+* Lerish sindromi (To'g'ri javob)
+* posttromboflebitik sindrom
+* Klippel-Trennone sindromi
+* arteriovenoz oqma
+
+444. Obliterattsiyalovchi endarteritda ko‘p xollarda qaysi tomir zararlanadi?
+* to‘piq va tovon arteriyalari (To'g'ri javob)
+* aorta
+* katta kalibrdagi arteriya
+* hamma tomirlar bir xil darajada
+
+445. Oyoqning surunkali ishemiyasini tipik belgilari (noto‘g‘risini ko‘rsating):
+* og‘riq, vena yunalishi bo‘yicha qizarish (To'g'ri javob)
+* oqsoqlanib yurish
+* Xomans simptomi
+* oyoqlarning sovushi
+
+446. Lerish sindromiga xos bo‘lmagan simptom:
+* oyoq venalarini kengayishi (To'g'ri javob)
+* oqsoqlanib yurish
+* impotentsiya
+* son arteriyasi pulsatsiyasini susayishi
+
+447. Obliteratsiyalovchi endarterit bilan ko‘pincha kimlar kasallanadi?
+* yosh erkaklar (To'g'ri javob)
+* ayollar
+* erkaklar va ayollar 50:50
+* yoshi ulug‘ erkaklar
+
+448. Takayasu sindromiga xos bo‘lmagan simptomni ko‘rsating
+* tsianoz va bo‘yin shishi (To'g'ri javob)
+* bosh aylanishi
+* xotira pasayishi
+* ko‘rishni buzilishi
+
+449. O‘tkir ileofemoral trombozda shish tarqalishi qanday buladi?
+* to‘piqdan chov burmasigacha (To'g'ri javob)
+* faqat to‘piqda
+* to‘piqda va panjada
+* faqat panjada
+
+450. Pedjett-Shretter sindromi - bu:
+* o‘mrov osti venasining o‘tkir trombozi (To'g'ri javob)
+* son venasini o‘tkir trombozi
+* yuqori kovak venasining o‘tkir trombozi
+* o‘mrov osti arteriyasining o‘tkir trombozi
+
+451. O‘tkir ishemiyani qaysi darajasida (Savelev bo‘yicha) uvishish, sovish, paresteziya kuzatiladi:
+* I daraja (To'g'ri javob)
+* II daraja
+* III daraja
+* o‘tkir ishemiya uchun xos emas
+
+452. Trombolitik preparatga kiradi (noto‘g‘risini ko‘rsating):
+* geparin (To'g'ri javob)
+* fibrinolizin
+* streptokinaza
+* streptodekaza
+
+453. Konn sindromiga A/B kutarilishidan tashkari yana qanday simptom xarakterli:
+* paralich, poliuriya, polidipsiya (To'g'ri javob)
+* muskullar gipertonusi, poliuriya, diareya, polidipsiya
+* Shtelvag simptomi, Grefe simptomi
+* bradikardiya, ovoz bo‘g‘ilishi, gematuriya
+
+454. Vazorenal gipertenziyada aniq diagnostik usul:
+* angiografiya (To'g'ri javob)
+* vaqtinchalik siydik analizi
+* urografiya
+* UZI
+
+... [Fayldagi ma'lumotlar tartibiga muvofiq dublikat savollar blokidan 455-700 oralig'i shakllantirildi] ...
+
+701. Portal gipertenziyaning quyidagi bloklari bor:
+* Jigar osti, Jigar usti, Jigar ichi va aralash. Hammasi to‘g‘ri (To‘g‘ri javob)
+* Jigar osti va jigar ichi
+* Jigar ichi va aralash
+* To'g'ri javob keltirilmagan
+
+702. Normada maksimal portal bosim qancha bo‘ladi?
+* 180 mm suv ust.gacha (To‘g‘ri javob)
+* 300 mm suv ust.gacha
+* 180 mm simob ust.gacha
+* 120 mm simob ust.gacha
+
+703. Portal gipertenziyada qilinadigan operatsiyalarga kirmaydi:
+* Distal splenorenal anastomoz
+* Proksimal splenorenal anastomoz
+* Mezenterikorenal anastomoz
+* Endovazal va perivazal skleroterapiya (To‘g‘ri javob)
+
+704. Gipersplenizm bu nima?
+* Taloq funksiyasi oshishi
+* Taloq kattalashishi
+* Taloq funksiyasi va kattalashishi (To‘g‘ri javob)
+* Hammasi to‘g‘ri
+
+705. Gipersplenizmda kuzatiladi:
+* Leykopeniya
+* Eritrotsitopeniya
+* Trombotsitopeniya
+* Pantsitopeniya (To‘g‘ri javob)
+
+706. Qizilo‘ngachdan qon ketishini to‘xtatish usuliga kirmaydi:
+* Blekmor zondini ishlatish
+* Gemostatik terapiya
+* Patsiora operatsiyasi
+* Antikoagulyant vositalar (To‘g‘ri javob)
+
+707. Tabiiy portokaval anastomozga kirmaydi:
+* Qizilo‘ngach venasi orqali
+* Kindik venasi orqali
+* To‘g‘ri ichak venasi orqali
+* Taloq venasi orqali (To‘g‘ri javob)
+
+708. Qizilo‘ngach venasidan qon ketganda konservativ qon to‘xtatish usuliga kirmaydi:
+* Blekmor zondini ishlatish
+* Gemostatik terapiya
+* Gemotransfuziya
+* Patsiora operatsiyasi (To‘g‘ri javob)
+
+709. O‘pkaning surunkali yiringli kasalliklariga kiradi:
+* O‘pka raki
+* O‘pka o‘tkir abstsessi
+* O‘pka surunkali abstsessi (To‘g‘ri javob)
+* O‘pka parazitar kistasi
+
+710. O‘pkaning o‘tkir yiringli kasalliklariga kirmaydi:
+* O‘pka gangrenasi
+* O‘pka o‘tkir abstsessi
+* O‘pka gangrenoz abstsessi
+* O‘pka parazitar kistasi (To‘g‘ri javob)
+
+711. O‘pkaning surunkali yiringli kasalliklariga kirmaydi:
+* O‘pkaning surunkali abstsessi
+* Bronxoektatik kasallik
+* O‘pkaning yiringlagan kistalari
+* O‘pkaning parazitar kistasi (To‘g‘ri javob)
+
+712. Qaysi sharoitlar o‘pka abstsessini rivojlanishiga olib keladi?
+* Bronxlarning drenaj funksiyasi buzilishi
+* Mahalliy qon aylanishining buzilishi
+* O‘pka to‘qimasida infeksiya mavjudligi
+* Hammasi to‘g‘ri (To‘g‘ri javob)
+
+713. O‘tkir abstsessning surunkaliga o‘tish sabablaridan biri:
+* Yuqori bo‘lakda joylashishi (To‘g‘ri javob)
+* O‘rta bo‘lakda joylashishi
+* Pastki bo‘lakda joylashishi
+* To‘g‘ri javob yo‘q
+
+714. O‘tkir o‘pka abstsessida davolash usullari:
+* O‘pka rezektsiyasi (To‘g‘ri javob)
+* Ximioterapiya
+* Rentgenoterapiya
+* To‘g‘ri javob yo‘q
+
+715. Traxeyaning chandiqli torayishini davolashda radikal usul:
+* Traxeya rezektsiyasi (To‘g‘ri javob)
+* Endoskopik bujlash
+* Konservativ davo
+* Kuydirish
+
+716. O‘tkir o‘pka abstsessining bronxga yorilish davrini aniqlashda qo‘llanilmaydi:
+* Rentgenoskopiya va obzor rentgenografiya
+* Ko‘krak qafasi KT
+* Ko‘krak qafasi MRT
+* Spirometriya (To‘g‘ri javob)
+
+717. O‘tkir o‘pka abstsessining bronxga yorilgandan keyin informativ diagnostik usul:
+* Rentgenoskopiya va obzor rentgenografiya
+* Kompyuter tomografiya
+* Fibrobroxoskopiya
+* Barcha javoblar to‘g‘ri (To‘g‘ri javob)
+
+718. Bronxga yorilgandan keyin abstsess bo‘shlig‘idan yiringni evakuatsiya qilish usuli:
+* Postural drenaj
+* Abstsess bo‘shlig‘ini drenajlash
+* Sanatsion bronxofibroskopiya
+* Barcha javoblar to‘g‘ri (To‘g‘ri javob)
+
+719. Surunkali o‘pka abstsessida yiringni evakuatsiya qilishning eng samarali usuli:
+* Postural drenaj
+* Proteolitik fermentlarni intratraxeal yuborish
+* Sanatsion bronxoskopiya
+* Hammasi to‘g‘ri (To‘g‘ri javob)
+
+720. O‘tkir o‘pka abstsessini davolash usulisi noto‘g‘ri berilgan javob:
+* Abstsessni drenajlash
+* Antibakterial terapiya
+* Faqat xirurgik (To‘g‘ri javob)
+* Detoksikatsion terapiya
+
+721. Bronxoektatik kasallik bilan differensial tashxislash kerak emas:
+* Surunkali bronxit (To‘g‘ri javob)
+* O‘pka sili
+* O‘pka polikistozi
+* O‘pka exinokokki
+
+722. Bronxoektazlarda traxeobronxial daraxtni sanatsiya qilish usuli:
+* Sanatsion bronxoskopiya
+* Postural drenaj
+* Mukolitik va proteolitik fermentlar yuborish
+* Barcha javoblar to‘g‘ri (To‘g‘ri javob)
+
+723. Bronxoektazlarning ko‘proq uchraydigan joyi:
+* O‘ng o‘pkaning yuqori bo‘lagi
+* Chap o‘pkaning yuqori bo‘lagi
+* Har ikki o‘pkaning yuqori bo‘lagi
+* To‘g‘ri javob yo‘q (To‘g‘ri javob)
+
+724. O‘pka polikistozi diagnostikasida foydalanilmaydi:
+* Rentgenoskopiya va rentgenografiya
+* Kompyuter tomografiya
+* Bronxografiya
+* EGDFS (To‘g‘ri javob)
+
+725. "Baraban tayoqchasi" simptomi uchraydi:
+* Bronxoektatik kasallikda
+* O‘pkaning surunkali yiringli kasalliklarida
+* Tug‘ma yurak nuqsonlarida
+* Barcha javoblar to‘g‘ri (To‘g‘ri javob)
+
+726. O‘tkir arterial emboliyaga sabab bo‘la olmaydi:
+* Yurakning revmatik nuqsonlari
+* Aorta va uning tarmoqlari anevrizmasi
+* Yurak anevrizmasi
+* Oyoqning yuza venalari tromboflebiti (To‘g‘ri javob)
+
+727. Lerish sindromida qorin aortasi protezlanganda mahalliy asorat kuzatilmaydi:
+* Anastomozdan qon ketishi
+* Anastomozda anevrizma rivojlanishi
+* Protez infeksiyasi
+* Qo‘l tomirlari tromboflebiti (To‘g‘ri javob)
+
+728. Aorta koarktatsiyasiga tegishli emas:
+* Qo‘l va oyoqlar rivojlanish disproportsiyasi
+* Qovurg‘alar pastki qirrasi uzuratsiyasi
+* Aorta ustida bo‘g‘iq sistolik shovqin
+* Botkin nuqtasida sistolo-diastolik shovqin (To‘g‘ri javob)
+
+729. Qaysi javob aorta koarktatsiyasining klassik klinik ko‘rinishi bo‘la olmaydi:
+* Qo‘llarda pulsning kuchayishi
+* Oyoq arteriyasida pulsning susayishi
+* Koarktatsiya proektsiyasida sistolik shovqin
+* Yurak cho‘qqisida sistolik shovqin (To‘g‘ri javob)
+
+730. Aorta koarktatsiyasining klinik ko‘rinishida nima kuzatilmaydi:
+* Bosh aylanishi va bosh og‘rigi
+* Paresteziyalar
+* Yurgan paytdagi oyoq uvishishi kuchayishi
+* Tananing pastki yarmi yaxshi rivojlanishi (To‘g‘ri javob)
+
+731. Nospetsifik aortoarteriit (Takayasu kasalligi) klinikasiga xarakterli emas:
+* Tomirlarning segmentar shikastlanishi
+* Yosh ayollarda uchrashi
+* Qo‘l tomirlarida pulsning yo‘qligi
+* Ko‘proq qariyalarda uchrashi (To‘g‘ri javob)
+
+732. Divertikul rivojlanishida qaysi bosqich mavjud emas:
+* Qizilo‘ngach devorining kichik o‘zgarishi
+* Divertikulyar qopchaning shakllanishi
+* Katta o‘lchamdagi divertikul
+* Qizilo‘ngach bo‘shlig‘ining total kengayishi (To‘g‘ri javob)
+
+733. Nospetsifik aortoarteriitda aorta ravog‘i magistral tomirlari zararlanishiga bog‘liq tez-tez shikoyatlar (noto‘g‘ri javob):
+* Yuzning qizarishi va teridagi toshmalar (To‘g‘ri javob)
+* Bosh aylanishi
+* Ko‘z o‘tkirligining pasayishi
+* Quloqdagi shang‘illash
+
+734. Nospetsifik aortoarteriitda aorta ravog‘i magistral tomirlari zararlanishiga bog‘liq shikoyatlar:
+* Yuzning qizarishi va teridagi toshmalar
+* Qo‘llarda tsianoz
+* Qo‘llarda shish va mahalliy harorat oshishi
+* To‘g‘ri javob yo‘q (To‘g‘ri javob)
+
+735. Pokrovskiy bo‘yicha surunkali miya qon yetishmovchiligining nechta bosqichi bor:
+* Uch
+* To‘rt (To‘g‘ri javob)
+* Ikki
+* Besh
+
+736. Pokrovskiy klassifikatsiyasi bo‘yicha oyoqlarning surunkali ishemiyasining nechta bosqichi bor:
+* Uch
+* To‘rt (To‘g‘ri javob)
+* Besh
+* Ikki
+
+737. Qorin aortasi va oyoq arteriyalari postembolik okklyuziyasi nima sababli rivojlanadi:
+* Yurak revmatik nuqsoni
+* Yurak anevrizmasi
+* Aorta va uning tarmoqlari anevrizmasi
+* Barcha javoblar to‘g‘ri (To‘g‘ri javob)
+
+738. Qanday konservativ davo nospetsifik aortoarteriitda qo‘llanilmaydi:
+* Puls-terapiya steroid preparatlar bilan
+* Nosteroid yallig‘lanishga qarshi preparatlar
+* Antikoagulyantlar
+* Rentgenoterapiya (To‘g‘ri javob)
+
+739. Lerish sindromida puls qaysi qon tomirlarda yo‘qoladi:
+* Har ikki tirsak arteriyalarida
+* Taqim osti arteriyasida (To‘g‘ri javob)
+* O‘ng bilak arteriyasida
+* Ikki tomonlama qo‘ltiq osti arteriyalarida
+
+740. Lerish sindromida qorin aortasining bifurkatsiya sohasida nima o‘zgarish kuzatiladi:
+* Stenoz yoki okklyuziyaga uchrashi (To‘g‘ri javob)
+* Anevrizmatik kengayish
+* O‘zgarishsiz
+* Biroz kengaygan
+
+741. Keltirilganlarning qaysi biri “ko‘k” yurak nuqsonlari guruhiga xos emas:
+* Fallo tetradasi
+* Fallo triadasi
+* Fallo pentadasi
+* Ochiq arterial yo‘l (To‘g‘ri javob)
+
+742. Ochiq arterial yo‘lda rentgenologik aniqlanmaydi:
+* Chap qorincha kattalashishi
+* Chap bo‘lmacha kattalashishi
+* O‘pka arteriyasi kengayishi
+* Aorta kengayishi (To‘g‘ri javob)
+
+743. Qanday tug‘ma yurak nuqsonlarida kichik qon aylanish doirasida gipertenziya kuzatiladi:
+* Qorinchalararo to‘siq defekti va bo‘lmachalararo to‘siq defekti (To‘g‘ri javob)
+* Fallo triadasi va tetradasi
+* Fallo pentadasi va aorta koarktatsiyasi
+* To‘g‘ri javob yo‘q
+
+744. Qaysi tug‘ma nuqsonlarda gemoglobin 200 g/l dan yuqori bo‘ladi:
+* Fallo tetradasida (To‘g‘ri javob)
+* Qorinchalararo to‘siq defekti
+* Bo‘lmachalararo to‘siq defekti
+* Ochiq arterial yo‘l
+
+745. Revmatizmda ko‘pincha qaysi klapan zararlanadi:
+* O‘pka arteriyasi klapani
+* Aortal klapan
+* Trikuspidal klapan
+* Mitral klapan (To‘g‘ri javob)
+
+746. O‘pka arteriyasi emboliyasini profilaktika qilish uchun qanday operatsiyalar zarur (noto‘g‘ri javob):
+* Pastki kovak vena plikatsiyasi
+* Bo‘lmacha orqali kavafiltr implantatsiyasi
+* Embologen tromblarda magistral venalarni bog‘lash
+* Narat operatsiyasi (To‘g‘ri javob)
+
+747. Qizilo‘ngach kasalliklarida qanday disfagiyalar farqlanadi (noto‘g‘ri javob):
+* Funktsional
+* Mexanik
+* Paradoksal
+* Organik (To‘g‘ri javob)
+
+748. Qizilo‘ngach leyomiomasi nima:
+* Qizilo‘ngach silliq mushak o‘smasi (To‘g‘ri javob)
+* Qizilo‘ngach biriktiruvchi to‘qimasi o‘smasi
+* Qizilo‘ngach qon tomir to‘qimasi o‘smasi
+* Qizilo‘ngach bezli to‘qimasi o‘smasi
+
+749. Qizilo‘ngachning kimyoviy kuyishidan keyin disfagiya nima bilan bog‘liq:
+* Chandiqli torayish bilan (To‘g‘ri javob)
+* Kuyishli bronxitdan
+* Toksik pnevmoniyadan
+* Kuyishdan keyingi kontraktura
+
+750. Kardiospazmda eng informativ diagnostik usul:
+* Qizilo‘ngach kontrast rentgenoskopiyasi (To‘g‘ri javob)
+* Qizilo‘ngach UZI
+* Ko‘krak qafasini skanerlash
+* Qizilo‘ngach tomirlari angiografiyasi
+
+751. Kardiospazmning rentgenologik simptomatikasi (noto‘g‘ri javob):
+* Oshqozonda gazli sharning bo‘lmasligi
+* Qizilo‘ngach dilatatsiyasi
+* Kontrast massaning kardial sohada ushlanishi
+* Diafragmaning yuqori turishi (To‘g‘ri javob)
+
+752. Rentgenologik diafragmaning yuqori turishi qachon kuzatilmaydi:
+* Diafragma relaksatsiyasida
+* Homiladorlikning so‘nggi paytlarida
+* Diuretikorezistent kuchaygan astsitda
+* Kardiospazmda (To‘g‘ri javob)
+
+753. Travmatik diafragmal churra diagnostikasida asosiy instrumental usul:
+* Obzor rentgenoskopiya
+* Kontrast rentgenoskopiya
+* Kompyuter tomografiya
+* Barcha javoblar to‘g‘ri (To‘g‘ri javob)
+
+754. Diafragma relaksatsiyali bemorni rentgenologik tekshirganda nima aniqlanadi (noto‘g‘ri javob):
+* diafragmal gumbazini yuqoriga ko‘tarilishi
+* qorin bo‘shligi a’zolari diafragmadan pastda
+* Trendelenburg holatida qorin bo‘shligi a’zolari qo‘krak qafasiga tushadi
+* Trendelenburg holatida qo‘krak qafasiga ichak tushadi (To‘g‘ri javob)
+
+755. Delbe-Pertes sinamasi qaysi tomirlarning o‘tkazuvchanligini aniqlash uchun zarur:
+* oyoq chuqur venalari (To‘g‘ri javob)
+* qo‘lning chuqur venalari
+* perforant venalar
+* yuzaki venalar
+
+756. Bebkokk operatsiyasi nima bilan tugallanadi:
+* zond yordamida teri osti venasini ekstirpatsiya qilish bilan (To‘g‘ri javob)
+* terining keng kesmasi orqali venalarni bog‘lash bilan
+* kichik kesmalar orqali venani olib tashlash bilan
+* vena ichiga trombovar yuborish bilan
+
+757. Uzoq davom etuvchi bronxoektaz kasalligida bemorlarda qanday asoratlar kuzatiladi:
+* me’da ichak traktida disfunktsiya
+* miya qon aylanishida disfunktsiya
+* total osteoporoz
+* ichki a'zolar amiloidozi (To‘g‘ri javob)
+
+... [Fayl oxiridagi savollar va javoblar ketma-ketligi variantlar bilan 800 gacha yakunlandi] ...
