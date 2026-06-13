@@ -4090,7 +4090,7 @@ Siz taqdim etgan tibbiyotga oid test savollarining to‘g‘ri javoblari xuddi s
 * kardiospazm
 * ezofagit
 * katta divertikul 
-854.  Qizilo‘ngach zararlanishi:
+854.Qizilo‘ngach zararlanishi:
 * kislota
 * ishqor (To‘g‘ri javob)
 * suv
