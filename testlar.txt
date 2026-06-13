@@ -528,6 +528,7 @@
 * fibrinolizin
 * streptokinaza
 * streptodekaza
+
 107. Konn sindromiga A/B kutarilishidan tashkari yana qanday simptom xarakterli:
 * paralich, poliuriya, polidipsiya (To'g'ri javob)
 * muskullar gipertonusi, poliuriya, diareya, polidipsiya
@@ -543,58 +544,58 @@
 * aldosteroma
 * leyomioma
 * fibroma
-110 O‘tkir mezenterial trombozni klinik kurinishi (noto‘g‘risini ko‘rsating):
-qorin sohasidagi intensiv og‘riq
-qayt qilish
-qon aralash najas ajralishi
-doskasimon qorin (To'g'ri javob)
-111 Plevrani surunkali empiemasini asosiy davolash usuli:
-xirurgik (plevrektomiya, o‘pka dekortikatsiyasi) (To'g'ri javob)
-konservativ
-punktsion
-plevral bo‘shliqni drenajlash
-112 Bronxoektaz kasalligini asosiy klinik simptomlarini ko‘rsating.
-yiringli balg‘am bilan yo‘tal, ko‘proq kechkurun
-yiringli balg‘am bilan yo‘tal, ko‘proq ertalab (To'g'ri javob)
-quruq yo‘tal
-bo‘g‘ilish
-113 Ko‘ks oralig‘ining o‘rta qismida ko‘p uchraydigan o‘sma va kistalarni toping.
-to‘sh orti buqog‘i, timoma, limfoma
-dermoid kista, mezenximal o‘sma
-bronxogen kista, enterogen kista (To'g'ri javob)
-timoma, enterogen kista, qizilo‘ngach o‘smasi
-114 Ko‘ks oralig‘ining oldingi yuqori qismida ko‘p uchraydigan o‘sma va kistalarni toping:
-to‘sh orti bo‘qog‘i, timoma (To'g'ri javob)
-timoma, dermoid kista, mezenximal o‘sma
-mezenximal o‘sma, enterogen kista, timoma
-nevrogen o‘sma, enterogen kista
-115 Ko‘ks oralig‘ining orqa qismida ko‘p uchraydigan o‘sma va kistalarni toping:
-to‘sh orti bo‘qog‘i, timoma, limfoma
-timoma, dermoid kista, mezenximal o‘sma
-nevrogen o‘sma, enterogen kista (To'g'ri javob)
-timoma, enterogen kista
-116 O‘tkir ishemiyani qaysi darajasida muskul kontrakturasi qo‘shiladi:
-I a darajasida
-II a darajasida
-III b darajasida (To'g'ri javob)
-III a darajasida
-117 Oyoq venalarini varikoz kengayishini asorati:
-yuza venalarni o‘tkir tromboflebiti (To'g'ri javob)
-to‘piq gangrenasi
-oqsoqlanish
-to‘g‘ri javob yo‘q
-118 Larrey uchburchagi qayerda joylashgan?
-diafragmani yuqori qismida
-diafragmani qovurg‘a va ko‘krak sohasida (To'g'ri javob)
-diafragmani qovurg‘a va bel sohasida
-diafragmani medial va lateral oyoqchalarida
-119 Boxdalek uchburchagi qayerda joylashgan?
-diafragmani yuqori qismida
-diafragmani qovurg‘a va bel sohasida (To'g'ri javob)
-diafragmani qovurg‘a va ko‘krak sohasida
-diafragmani medial va lateral oyoqchalarida
-120 Son arteriyasining okklyuziya simptomi (noto‘g‘risini ko‘rsating):
-puls yo‘qolishi
-oyoq sovushi
-oyoq gipertermiyasi (To'g'ri javob)
-oyoqdagi og‘riq
+110. O‘tkir mezenterial trombozni klinik kurinishi (noto‘g‘risini ko‘rsating):
+•  qorin sohasidagi intensiv og‘riq
+•  qayt qilish
+•  qon aralash najas ajralishi
+•  doskasimon qorin (To'g'ri javob)
+111. Plevrani surunkali empiemasini asosiy davolash usuli:
+•  xirurgik (plevrektomiya, o‘pka dekortikatsiyasi) (To'g'ri javob)
+•  konservativ
+•  punktsion
+•  plevral bo‘shliqni drenajlash
+112. Bronxoektaz kasalligini asosiy klinik simptomlarini ko‘rsating.
+•  yiringli balg‘am bilan yo‘tal, ko‘proq kechkurun
+•  yiringli balg‘am bilan yo‘tal, ko‘proq ertalab (To'g'ri javob)
+•  quruq yo‘tal
+•  bo‘g‘ilish
+113. Ko‘ks oralig‘ining o‘rta qismida ko‘p uchraydigan o‘sma va kistalarni toping.
+•  to‘sh orti buqog‘i, timoma, limfoma
+•  dermoid kista, mezenximal o‘sma
+•  bronxogen kista, enterogen kista (To'g'ri javob)
+•  timoma, enterogen kista, qizilo‘ngach o‘smasi
+114. Ko‘ks oralig‘ining oldingi yuqori qismida ko‘p uchraydigan o‘sma va kistalarni toping:
+•  to‘sh orti bo‘qog‘i, timoma (To'g'ri javob)
+•  timoma, dermoid kista, mezenximal o‘sma
+•  mezenximal o‘sma, enterogen kista, timoma
+•  nevrogen o‘sma, enterogen kista
+115. Ko‘ks oralig‘ining orqa qismida ko‘p uchraydigan o‘sma va kistalarni toping:
+•  to‘sh orti bo‘qog‘i, timoma, limfoma
+•  timoma, dermoid kista, mezenximal o‘sma
+•  nevrogen o‘sma, enterogen kista (To'g'ri javob)
+•  timoma, enterogen kista
+116. O‘tkir ishemiyani qaysi darajasida muskul kontrakturasi qo‘shiladi:
+•  III b darajasida (To'g'ri javob)
+•  I a darajasida
+•  II a darajasida
+•  III a darajasida
+117. Oyoq venalarini varikoz kengayishini asorati:
+•  yuza venalarni o‘tkir tromboflebiti (To'g'ri javob)
+•  to‘piq gangrenasi
+•  oqsoqlanish
+•  to‘g‘ri javob yo‘q
+118. Larrey uchburchagi qayerda joylashgan?
+•  diafragmani yuqori qismida
+•  diafragmani qovurg‘a va ko‘krak sohasida (To'g'ri javob)
+•  diafragmani qovurg‘a va bel sohasida
+•  diafragmani medial va lateral oyoqchalarida
+119. Boxdalek uchburchagi qayerda joylashgan?
+•  diafragmani yuqori qismida
+•  diafragmani qovurg‘a va bel sohasida (To'g'ri javob)
+•  diafragmani qovurg‘a va ko‘krak sohasida
+•  diafragmani medial va lateral oyoqchalarida
+120. Son arteriyasining okklyuziya simptomi (noto‘g‘risini ko‘rsating):
+•  puls yo‘qolishi
+•  oyoq sovushi
+•  oyoq gipertermiyasi (To'g'ri javob)
+•  oyoqdagi og‘riq
