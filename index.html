@@ -253,9 +253,11 @@
                         break;
                     }
                     
-                    let isCorrect = optLine.includes("To'g'ri javob");
+                    let isCorrect = optLine.toLowerCase().includes("to'g'ri javob");
                     let cleanOpt = optLine.replace(/^\[\*/, '').replace(/^\*/, '').replace(/^•/, '').trim();
-                    cleanOpt = cleanOpt.replace(/\(To'g'ri javob\)/g, '').replace(/To'g'ri javob/g, '');
+                    
+                    // Kichik va katta harflardagi har qanday (To'g'ri javob) qavsli va qavssiz matnlarni o'chirish uchun RegExp
+                    cleanOpt = cleanOpt.replace(/\s*\(?to'g'ri\s+javob\)?/gi, '');
                     cleanOpt = cleanOpt.replace(/\{\.mark\}/g, '').replace(/\]/g, '').trim();
                     
                     if (cleanOpt === "") cleanOpt = optLine.replace(/^\*/, '').trim();
