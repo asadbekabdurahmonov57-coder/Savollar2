@@ -3007,3 +3007,504 @@ Siz taqdim etgan tibbiyotga oid test savollarining to‘g‘ri javoblari xuddi s
 •	jigarning kattalashishi 
 •	astsitning paydo bo‘lishi 
 •	barcha javoblar to‘g‘ri (To‘g‘ri javob)
+601.	Fallo tetradasida yurakdagi anatomik o‘zgarishlar: 
+•	ochiq arterial tomir 
+•	bo‘lmachalararo defekt 
+•	anomal o‘pka venasi 
+•	to‘g‘ri javob yo‘q (To‘g‘ri javob) 
+602.	O‘pka arteriyasi tromboemboliyasining klinik simptomlari: 
+•	hansirash va intensiv og‘riq 
+•	yuz, bo‘yin va bel sohalarida tsianoz 
+•	taxikardiya, gipotenziya 
+•	barcha javoblar to‘g‘ri (To‘g‘ri javob) 
+603.	Angiopulmonografiyada o‘pka arteriyasi emboliyasining asosiy belgilari: 
+•	o‘pka arteriyasining asosi va shoxlarining to‘lish defekti (To‘g‘ri javob) 
+•	qovurg‘a pastki qirrasi uzuratsiyasi 
+•	o‘pka to‘qimasining gipervaskulyar zonalari 
+•	o‘pka arteriyasi devorlari qattiqligi 
+604.	O‘pkaning yiringli-destruktiv kasalliklariga kirmaydi: 
+•	o‘choqli pnevmoniya (bronxopnevmoniya) (To‘g‘ri javob) 
+•	o‘pka abstsessi 
+•	o‘pkaning anaerob destruktsiyasi 
+•	o‘pka gangrenasi 
+605.	O‘pkaning stafilokokkli destruktsiyasi sabablari: 
+•	o‘pkadagi stafilokokkli infeksiya 
+•	immun statusning birdan pasayishi 
+•	bronxlarning drenaj funksiyasi buzilishi 
+•	barcha javoblar to‘g‘ri (To‘g‘ri javob) 
+606.	O‘pka va plevrada yiringli kasallik chaqiruvchi mikroflorani ayting: 
+•	anaerob klostridial bo‘lmagan aerob mikroflora jamlanmasi (To‘g‘ri javob) 
+•	enterokokk mikroflora 
+•	klebsiella 
+•	xlamidiya 
+607.	O‘pkaning stafilokokkli destruktsiyasi asoratlari: 
+•	piopnevmotoraks (To‘g‘ri javob) 
+•	o‘pka arteriyasi tromboemboliyasi 
+•	chap qorincha yetishmovchiligi 
+•	iliofemoral tromboz 
+608.	Diafragmaning mushak qismi qanday qismlarga bo‘linadi: 
+•	ko‘krak 
+•	qovurg‘a 
+•	bel 
+•	barcha javoblar to‘g‘ri (To‘g‘ri javob) 
+609.	Mexanik sariqligi bor bo‘lgan bemorni 1-bosqich davolanishi: 
+•	a’zo va sistemalarning funksiyasini yaxshilash, o‘t yo‘llari dekompressiyasi, organizmning detoksikatsiyasi (To‘g‘ri javob) 
+•	davolashning faqat xirurgik usuli 
+•	terapevtik bo‘lim sharoitida konservativ terapiya 
+•	diagnostik 
+610.	Parenximatoz sariqlikning asosiy klinik ko‘rinishi: 
+•	faqat to‘g‘ri bilirubinning oshishi 
+•	axolik stul 
+•	terining odatiy rangdaligi 
+•	to‘g‘ri javob yo‘q (To‘g‘ri javob) 
+611.	Gemolitik sariqlikning asosiy klinik belgilari: 
+•	teri limon-sariq rangda 
+•	teri qichishishi yo‘q 
+•	jigar odatiy o‘lchamda yoki biroz kattalashgan 
+•	barcha javoblar to‘g‘ri (To‘g‘ri javob) 
+612.	Mexanik sariqlikda xolangit simptomlarini ko‘rsating (noto‘g‘ri javob): 
+•	qichishish 
+•	gektik temperatura 
+•	intoksikatsiya simptomlari 
+•	subfebril temperatura (To‘g‘ri javob) 
+613.	Portal gipertenziyaning uch bosqichini ayting: 
+•	engil 
+•	og‘ir 
+•	o‘ta og‘ir 
+•	to‘g‘ri javob yo‘q (To‘g‘ri javob) 
+614.	Portal gipertenziyada jigar ichi bloki etiologik faktorini ko‘rsating: 
+•	jigar fibrozi 
+•	Kiari kasalligi 
+•	Pika sirrozi (To‘g‘ri javob) 
+•	darvoza venasi gipoplaziyasi 
+615.	Portal gipertenziyada jigar usti bloki etiologik faktorini ko‘rsating: 
+•	sindrom Baddi-Kiari (To‘g‘ri javob) 
+•	jigar darvozasi o‘smasi 
+•	darvoza vena trombozi 
+•	darvoza venaning o‘sma ta’sirida ezilishi 
+616.	Portokaval anastomozlarni belgilang: 
+•	qizilo‘ngachning abdominal va oshqozonning kardial bo‘limi anastomozi 
+•	yuqori, o‘rta va pastki to‘g‘ri ichak venalari anastomozi 
+•	darvoza venasidan oldingi qorin devoriga qonni haydovchi kindik oldi va kindik venalari orasidagi anastomoz 
+•	barcha javoblar to‘g‘ri (To‘g‘ri javob) 
+617.	Varikoz kengaygan tomirlaridan qon ketishidagi davolash rejaga nima kirmaydi: 
+•	qon oqishni to‘xtash 
+•	qon yo‘qotilishni kompensatsiyalash 
+•	jigar yetishmasligi bilan kurashish 
+•	antikoagulyantlar kiritish (To‘g‘ri javob) 
+618.	Traxeya stenozini aniqlash uchun qanday tekshiruv o‘tkazilmaydi: 
+•	UTT (To‘g‘ri javob) 
+•	MSKT 
+•	bronxoskopiya 
+•	traxeogramma 
+619.	Jigar exinokokkozining 2 turini ayting: 
+•	gidatidoz, alveolyar (To‘g‘ri javob) 
+•	aralash, tug‘ma 
+•	gidatidoz, tsistitserkoz 
+•	to‘g‘ri javob yo‘q 
+620.	Jigar exinokokkoziga eng xarakterli shikoyatlarni keltiring: 
+•	chap yonbosh sohasidagi og‘riqlar 
+•	dispeptik alomatlar 
+•	ich qotishlari 
+•	dispeptik alomatlar (To‘g‘ri javob) 
+621.	Jigar exinokokkozining og‘ir ko‘rinishlaridagi asosiy shikoyatlar: 
+•	tana haroratining ko‘tarilishi 
+•	sovuq qotib titrash 
+•	darmonsizlik 
+•	barcha javoblar to‘g‘ri (To‘g‘ri javob) 
+622.	Jigar exinokokkozining asosiy asoratlari: 
+•	exinokokk kistasining yiringlashi 
+•	kistaning oshqozonga, plevra bo‘shlig‘iga yorilishi 
+•	o‘t yo‘llarining ezilishi bilan mexanik sariqlik 
+•	barcha javoblar to‘g‘ri (To‘g‘ri javob) 
+623.	Jigarning parazitar kasalliklarini differensial tashxislashda noto‘g‘ri javob: 
+•	jigar o‘smalari 
+•	jigarning parazit bo‘lmagan kistasi 
+•	jigar sirrozi 
+•	chap buyrakning o‘smasi (To‘g‘ri javob) 
+624.	Jigar exinokokkozi bilan kasallangan bemorni ob’ektiv tekshirish: 
+•	o‘ng qovurg‘alar ostida jigar kelib chiqqan shish, qattiq deyarli og‘riqsiz massa 
+•	epigastriy og‘riqlar rektumga irradiatsiya 
+•	o‘ng qovurg‘alar ostida kuchli og‘riq 
+•	to‘g‘ri javob yo‘q (To‘g‘ri javob) 
+625.	Qizilo‘ngach perforatsiyasining asosiy klinik ko‘rinishlari: 
+•	bo‘yinda va ko‘krak ortida kuchli og‘riq 
+•	yutish, yo‘tal, nafas olishda og‘riq kuchayishi 
+•	nafas olish sekinlashishi 
+•	qo‘ltiq ostida teri osti emfizema (To‘g‘ri javob) 
+626.	Qizilo‘ngach perforatsiyasiga shubhada ishlatilmaydigan tekshiruv: 
+•	keng rentgenoskopiya va rentgenografiya 
+•	kontrastli rentgenoskopiya 
+•	ezofagoskopiya 
+•	angiografiya (To‘g‘ri javob) 
+627.	Qizilo‘ngach divertikullarini xirurgik davolash ko‘rsatmalari: 
+•	perforatsiya, qon ketish kabi asoratlar 
+•	har qanday divertikul 
+•	yangi aniqlangan kichik divertikul 
+•	to‘g‘ri javob yo‘q (To‘g‘ri javob) 
+628.	Kardiospazmning asosiy sabablari: 
+•	xlorid kislotaning gipersekretsiyasi 
+•	nafas yo‘llari kasalliklari 
+•	diafragma churrasi 
+•	to‘g‘ri javob yo‘q (To‘g‘ri javob) 
+629.	Diafragma kasalliklarini aniqlovchi asosiy noinvaziv usullar: 
+•	rentgenologik tekshiruvlar (RTG, KT) 
+•	laparoskopiya 
+•	pnevmomediastinografiya 
+•	torakoskopiya
+→ To‘g‘ri javob: rentgenologik usullar (1-variant) 
+630.	Qizilo‘ngach divertikulining asoratlari (noto‘g‘ri javob): 
+•	perforatsiya 
+•	qon ketish 
+•	malignizatsiya 
+•	stenoz (To‘g‘ri javob) 
+631.	Diafragmaning kuchsiz zonalarida hosil bo‘ladigan churralar: 
+•	diafragma relaksatsiyasi 
+•	qizilo‘ngach teshigi churrasi 
+•	tug‘ma qisqa qizilo‘ngach 
+•	to‘g‘ri javob yo‘q (To‘g‘ri javob) 
+632.	Qisilmagan paraezofageal churralar: 
+•	ko‘pincha aniq klinik simptomlar bilan kechadi 
+•	tez uchraydi 
+•	jigar va taloq ham kirishi mumkin 
+•	to‘g‘ri javob yo‘q (To‘g‘ri javob) 
+633.	Diafragmal churrani aniqlovchi omil: 
+•	kardiorespirator va GI simptomlarning birga bo‘lishi 
+•	infeksion belgilar 
+•	shamollashdan keyin kuchayish 
+•	to‘g‘ri javob yo‘q (To‘g‘ri javob) 
+634.	Diafragma yorilishiga shubhada noto‘g‘ri belgi: 
+•	timpanit 
+•	ichak tovushlari ko‘krakda eshitilishi 
+•	ichak tutilishi 
+•	o‘pkada quruq va nam xirillashlar (To‘g‘ri javob) 
+635.	Diafragma yorilishida informativ noinvaziv tekshiruv: 
+•	rentgenoskopiya va rentgenografiya (To‘g‘ri javob) 
+•	torakoskopiya 
+•	UZI 
+•	laparoskopiya 
+636.	O‘tkir mediastinit simptomlari (noto‘g‘ri): 
+•	ko‘krak ortida og‘riq 
+•	yuqori harorat 
+•	titrash, taxikardiya 
+•	jig‘ildon qaynashi (To‘g‘ri javob) 
+637.	O‘tkir mediastinit belgilari (noto‘g‘ri): 
+•	yutganda og‘riq 
+•	yuqori harorat 
+•	puls o‘zgarishi 
+•	arterial bosimning ko‘tarilishi (To‘g‘ri javob) 
+638.	Mediastinit rentgenologik belgisi: 
+•	mediastinal soyaning kengayishi (To‘g‘ri javob) 
+•	torayishi 
+•	kardiomegaliya 
+•	diafragma ko‘tarilishi 
+639.	Mediastinit asoratlari: 
+•	yiringning plevraga yorilishi (To‘g‘ri javob) 
+•	oshqozonga yorilishi 
+•	diafragmaga yorilishi 
+•	qorin bo‘shlig‘iga yorilishi 
+640.	Mediastinit asoratlari: 
+•	arroziv qon ketish (To‘g‘ri javob) 
+•	oshqozonga yorilishi 
+•	diafragmaga yorilishi 
+•	ko‘ks oralig‘i stenozi 
+641.	Ko‘ks oralig‘i enterokistomasi: 
+•	tug‘ma 
+•	GI devoriga o‘xshash tuzilma 
+•	kam uchraydi 
+•	barcha javoblar to‘g‘ri (To‘g‘ri javob) 
+642.	Mediastinum o‘smalari (noto‘g‘ri): 
+•	nevrogen 
+•	mezenximal 
+•	retikulyar to‘qima 
+•	teri osti kletchatkasi o‘smalari (To‘g‘ri javob) 
+643.	Mediastinal o‘sma manbasi bo‘la olmaydi: 
+•	qovurg‘alararo nervlar 
+•	diafragma nervi 
+•	adashgan nerv 
+•	ildiz oldi nervlari (To‘g‘ri javob) 
+644.	Nevrinoma haqida noto‘g‘ri: 
+•	Shvann hujayralaridan 
+•	20–50 yosh 
+•	orqa mediastinum 
+•	gangliydan paydo bo‘ladi (To‘g‘ri javob) 
+645.	Neyrofibroma haqida noto‘g‘ri: 
+•	nerv qavatidan 
+•	orqa mediastinum 
+•	kapsulali tugun 
+•	nerv tolalaridan hosil bo‘ladi (To‘g‘ri javob) 
+646.	Endoskopik usullar: 
+•	qattiq bronxoskopiya 
+•	fibrobronxoskopiya 
+•	torakoskopiya 
+•	barcha javoblar to‘g‘ri (To‘g‘ri javob) 
+647.	Stafilokokk destruktsiyada noto‘g‘ri: 
+•	infiltratsiya 
+•	bo‘shliqlar 
+•	plevrit 
+•	bronxo-plevro-torakal oqma (To‘g‘ri javob) 
+648.	O‘pka gangrenasi: 
+•	o‘pkaning aniq chegarali qorayishi (To‘g‘ri javob) 
+•	perikard suyuqligi 
+•	Damuazo chizig‘i 
+•	to‘g‘ri javob yo‘q 
+649.	Surunkali NSP o‘pka kasalligi: 
+•	o‘pka sil kasalligi 
+•	o‘pka saratoni 
+•	Kartagener sindromi (To‘g‘ri javob) 
+•	to‘g‘ri javob yo‘q 
+650.	Plevra empiemasi turlari: 
+•	birlamchi, ikkilamchi (To‘g‘ri javob) 
+•	gematogen, limfogen 
+•	lokal, diffuz 
+•	to‘g‘ri javob yo‘q
+651.	Ikkilamchi plevra empiemani asosiy kelib chiqish manbalari (noto‘g‘ri javob): 
+•	o‘pka abstsessi 
+•	yiringli bronxoektazlar plevraga yorilishi 
+•	abstsessga aylanuvchi pnevmoniya 
+•	o‘pka saratoni (To‘g‘ri javob) 
+652.	O‘pkaning o‘tkir yiringli destruktiv kasalliklariga kiruvchi asosiy kasalliklar (noto‘g‘ri): 
+•	stafilokokk o‘pka destruktsiyasi 
+•	o‘pka abstsessi 
+•	o‘pka gangrenasi 
+•	o‘pka aspergillomasi (To‘g‘ri javob) 
+653.	O‘tkir piopnevmotoraks klinik ko‘rinishlari: 
+•	ko‘krakda kuchli og‘riq 
+•	tez nafas olish, holsizlik 
+•	sovuq ter, rang oqarishi 
+•	barcha javoblar to‘g‘ri (To‘g‘ri javob) 
+654.	Kartagener sindromidagi nuqsonlar (noto‘g‘ri): 
+•	sinusit, bronxoektazlar 
+•	a’zolarning teskari joylashishi 
+•	taloq polikistozi (To‘g‘ri javob) 
+•	o‘pka emfizemasi 
+655.	Ikkilamchi bronxoektazni keltirib chiqaruvchi kasalliklar: 
+•	o‘pka saratoni 
+•	o‘pka kistalari 
+•	surunkali sinusit 
+•	to‘g‘ri javob yo‘q (To‘g‘ri javob) 
+656.	Obliteratsiyalovchi arteriya kasalliklarida diagnostika: 
+•	UZI 
+•	KT 
+•	funksional sinamalar 
+•	to‘g‘ri javob yo‘q (To‘g‘ri javob) 
+657.	Obliteratsiyalovchi endarteriit profilaktikasi: 
+•	chekishni tashlash 
+•	sovuqdan saqlanish 
+•	sovqotishni oldini olish 
+•	barcha javoblar to‘g‘ri (To‘g‘ri javob) 
+658.	Endarteriitda simpatektomiya turlari (noto‘g‘ri): 
+•	bel simpatektomiyasi 
+•	periarterial simpatektomiya 
+•	yonbosh simpatektomiya 
+•	hammasi to‘g‘ri (To‘g‘ri javob) 
+659.	“Oqsoqlanish” simptomi bo‘lmaydigan kasallik: 
+•	obliteratsiyalovchi ateroskleroz 
+•	obliteratsiyalovchi endarteriit 
+•	Buerger kasalligi 
+•	Klippel–Trenaunay sindromi (To‘g‘ri javob) 
+660.	Tug‘ma arterial kasallik (noto‘g‘ri): 
+•	fibromuskulyar displaziya 
+•	gipoplaziya, aplaziya 
+•	tug‘ma stenozlar 
+•	nospetsifik aortoarteriit (To‘g‘ri javob) 
+661.	Orttirilgan arterial kasallik (noto‘g‘ri): 
+•	obliteratsiyalovchi ateroskleroz 
+•	endarteriit 
+•	aortoarteriit 
+•	sistemali vaskulitlar (To‘g‘ri javob) 
+662.	Angiografiya turlari (noto‘g‘ri): 
+•	punktsion 
+•	Seldinger 
+•	Dos Santos 
+•	distal arteriografiya (To‘g‘ri javob) 
+663.	Buyrak qon aylanish buzilishi sababi (noto‘g‘ri): 
+•	fibromuskulyar displaziya 
+•	AV oqmalar 
+•	aorta gipoplaziyasi 
+•	Girshprung kasalligi (To‘g‘ri javob) 
+664.	Xavfli arterial gipertenziya (noto‘g‘ri): 
+•	130–140 diastolik bosim 
+•	neyroretinopatiya 
+•	buyrak yetishmovchiligi 
+•	100 mm Hg gacha ko‘tarilish (To‘g‘ri javob) 
+665.	Buyrak arterial buzilishi sababi (noto‘g‘ri): 
+•	fibromuskulyar displaziya 
+•	ateroskleroz 
+•	aortoarteriit 
+•	o‘sma bilan ezilish (To‘g‘ri javob) 
+666.	Varikoz bosqichlari (noto‘g‘ri): 
+•	kompensatsiya 
+•	subkompensatsiya 
+•	dekompensatsiya 
+•	simptomsiz (To‘g‘ri javob) 
+667.	Kompensatsiya bosqichi (noto‘g‘ri): 
+•	og‘irlik hissi 
+•	mushak titrashi 
+•	varikoz tomirlar 
+•	oyoqlarning doimiy shishi (To‘g‘ri javob) 
+668.	Subkompensatsiya bosqichi (noto‘g‘ri): 
+•	og‘irlik 
+•	pigmentatsiya, shish 
+•	varikoz 
+•	500 m yurishda charchash (To‘g‘ri javob) 
+669.	Yuza venalar tromboflebiti (noto‘g‘ri): 
+•	vena bo‘ylab og‘riq 
+•	qalinlashish 
+•	giperemiya 
+•	boldir teri giperpigmentatsiyasi (To‘g‘ri javob) 
+670.	Varikoz asorati (noto‘g‘ri): 
+•	qon ketish 
+•	trofik yara 
+•	tromboflebit 
+•	tovon quruq gangrenasi (To‘g‘ri javob) 
+671.	Yuza venalar: 
+•	katta va kichik teri osti venalari 
+•	kichik teri osti vena 
+•	yuzaki teri osti vena 
+•	uyqu venasi (To‘g‘ri javob) 
+672.	Chuqur venalar (noto‘g‘ri): 
+•	oldingi tibial 
+•	orqa tibial 
+•	fibular 
+•	son venasi (To‘g‘ri javob) 
+673.	Klippel–Trenaunay sindromi (noto‘g‘ri): 
+•	dog‘lar 
+•	varikoz 
+•	gipertrofiya 
+•	gemangioperitsitoma (To‘g‘ri javob) 
+674.	Parks–Veber–Rubashov (noto‘g‘ri): 
+•	kattalashish 
+•	varikoz 
+•	gemangiektaziya 
+•	og‘riq yo‘qligi (To‘g‘ri javob) 
+675.	Fil oyoq (noto‘g‘ri): 
+•	og‘riqsiz 
+•	teri qalinlashishi 
+•	shish 
+•	gemangiektaziya (To‘g‘ri javob) 
+676.	O‘pka abstsessi II bosqichi: 
+•	yupqa devorli bo‘shliq 
+•	infiltratsiyasiz 
+•	suyuqlikli bo‘shliq va infiltratsiya (To‘g‘ri javob) 
+•	ko‘p mayda o‘choqlar 
+677.	Jigar sirrozida portal gipertenziya sababi: 
+•	jigar ichi bloki 
+•	jigar usti bloki 
+•	Baddi-Kiari 
+•	jigar ichi bloki (To‘g‘ri javob) 
+678.	Demping sindromi og‘ir bosqichi: 
+•	dieta 
+•	spazmolitik 
+•	bintlash 
+•	operativ usul (To‘g‘ri javob) 
+679.	O‘pka raki kech simptomlari: 
+•	yo‘tal, yaxshi holat 
+•	qon tupurish 
+•	atelektaz 
+•	bo‘lak atelektazi, SVC sindrom (To‘g‘ri javob) 
+680.	Jigar sirrozi portal gipertenziya mexanizmi: 
+•	jigar hajmi kamayishi 
+•	fibroz to‘siqlar (To‘g‘ri javob) 
+•	gepatotsit nekrozi 
+•	regeneratsion tugun 
+681.	Varikoz qon ketishi: 
+•	bosuvchi bog‘lam 
+•	jgut 
+•	bosib turish 
+•	hamma javoblar to‘g‘ri (To‘g‘ri javob) 
+682.	Shifoxonagacha plevra punktsiya ko‘rsatma: 
+•	ochiq pnevmotoraks 
+•	tarang pnevmotoraks 
+•	plevrit 
+•	yopiq pnevmotoraks (To‘g‘ri javob) 
+683.	Refluksda yotganda jig‘ildon: 
+•	kuchayadi (To‘g‘ri javob: yetarli emas) 
+•	kuchli 
+•	kengaygan 
+•	to‘g‘ri javob yo‘q 
+684.	Varikoz joylashishi noto‘g‘ri: 
+•	safenoboldir 
+•	o‘rta boldir 
+•	yuqori boldir 
+•	tovon (To‘g‘ri javob) 
+685.	Konservativ davo: 
+•	issiq vanna 
+•	elastik bint 
+•	yurish 
+•	antibiotiklar (To‘g‘ri javob) 
+686.	Skleroterapiya: 
+•	hamma bosqich 
+•	dekompensatsiya 
+•	boshlang‘ich 
+•	tizza osti okklyuziya (To‘g‘ri javob) 
+687.	Elastik bint: 
+•	vertikal 
+•	gorizontal 
+•	o‘tirgan 
+•	oyoqlar ko‘tarilgan holatda (To‘g‘ri javob) 
+688.	Tromboz profilaktikasi: 
+•	immobilizatsiya 
+•	sport 
+•	elastik bint 
+•	jismoniy faollik (To‘g‘ri javob) 
+689.	Perforant yetishmovchiligi operatsiyasi: 
+•	Narat 
+•	Klapp 
+•	Linton (To‘g‘ri javob) 
+•	Trendelenburg 
+690.	Tromboz profilaktikasida ishlatilmaydi: 
+•	immobilizatsiya 
+•	venoz yetishmovchilik 
+•	yurak yetishmovchiligi 
+•	jismoniy yuklama (To‘g‘ri javob) 
+691.	Iliofemoral tromboz invaziv diagnostika: 
+•	pletizmografiya 
+•	UZI 
+•	Doppler 
+•	kontrast flebografiya (To‘g‘ri javob) 
+692.	Tromb: 
+•	vena toraytiradi 
+•	okklyuziya qiladi 
+•	suzadi 
+•	qon oqimini qiyinlashtiradi (To‘g‘ri javob) 
+693.	Kava trombozi sababi: 
+•	yuqori oqim 
+•	intima o‘zgarishi 
+•	ko‘tarilish 
+•	gemodinamik buzilish (To‘g‘ri javob) 
+694.	Ileofemoral tromboz xususiyati emas: 
+•	yoshda xavf 
+•	atipik 
+•	emboliya xavfi 
+•	erkaklarda ko‘proq (To‘g‘ri javob) 
+695.	Flebografiya turlari: 
+•	birlamchi 
+•	ikkilamchi 
+•	kontrastli 
+•	yuqoriga va pastga tushuvchi (To‘g‘ri javob) 
+696.	Paget–Schroetter sindromi: 
+•	qo‘l shishi 
+•	o‘mrov osti shishi 
+•	bilak shishi 
+•	yelka arteriya puls susayishi (To‘g‘ri javob) 
+697.	Abortdan keyin oyoq shishi: 
+•	emboliya 
+•	limfedema 
+•	ileofemoral tromboz (To‘g‘ri javob) 
+•	posttromboflebitik 
+698.	Buqoq turlari (noto‘g‘ri): 
+•	Riedel 
+•	Hashimoto 
+•	De Quervain 
+•	Takayasu (To‘g‘ri javob) 
+699.	Trombolizis: 
+•	antikoagulyantni almashtirmaydi 
+•	qayta tromboz yo‘q 
+•	mutlaq taqiqlangan 
+•	faqat kichik emboliyalarda (To‘g‘ri javob) 
+700.	O‘pka arteriyasi trombozi belgisi: 
+•	taxikardiya 
+•	tsianoz 
+•	taxipnoe 
+•	teleangiektaziya (To‘g‘ri javob)
