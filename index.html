@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>To‘liq test: 884 savol (faqat 100 tasi ko‘rsatiladi)</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background: #f0f7fc;
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #1a344b;
+        }
+        .quiz-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header-card {
+            background: white;
+            border-radius: 30px;
+            padding: 20px 28px;
+            margin-bottom: 32px;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.03);
+            text-align: center;
+            border: 1px solid #e2edf5;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(4px);
+        }
+        h1 {
+            margin: 0 0 6px 0;
+            font-size: 1.8rem;
+            color: #166b8f;
+        }
+        .sub {
+            color: #3c708b;
+            font-size: 0.9rem;
+        }
+        .status-bar {
+            margin-top: 15px;
+            background: #e9f1f7;
+            border-radius: 60px;
+            padding: 8px 18px;
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .quiz-questions {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .question-card {
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #e0ecf5;
+            overflow: hidden;
+            transition: 0.1s;
+        }
+        .question-header {
+            background: #fbfefe;
+            padding: 18px 24px;
+            border-bottom: 1px solid #e9f0f5;
+        }
+        .question-text {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin: 0;
+            line-height: 1.45;
+            color: #0c4e6e;
+        }
+        .options-area {
+            padding: 20px 24px 24px 24px;
+        }
+        .option {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 100px;
+            background: #fefefe;
+            border: 1px solid #e0ecf3;
+            transition: 0.1s;
+            cursor: pointer;
+        }
+        .option:hover {
+            background: #f2f8fe;
+        }
+        .option-radio {
+            margin-top: 2px;
+            flex-shrink: 0;
+            width: 18px;
+            height: 18px;
+            accent-color: #2c7da0;
+            cursor: pointer;
+        }
+        .option-text {
+            flex: 1;
+            font-size: 0.94rem;
+            line-height: 1.4;
+            cursor: pointer;
+            color: #1f4b66;
+        }
+        .option.correct-highlight {
+            background: #d4edda;
+            border-color: #2b8c4a;
+        }
+        .option.correct-highlight .option-text {
+            color: #155e2d;
+            font-weight: 500;
+        }
+        .option.wrong-highlight {
+            background: #f8d7da;
+            border-color: #dc3545;
+        }
+        .option.wrong-highlight .option-text {
+            color: #9b2f36;
+        }
+        .feedback {
+            margin-top: 12px;
+            font-size: 0.8rem;
+            padding-left: 8px;
+            color: #2b6f94;
+        }
+        .footer-info {
+            background: white;
+            border-radius: 28px;
+            padding: 24px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #4f7f9c;
+            box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.02);
+            border: 1px solid #e2edf5;
+        }
+        .loader, .error-box {
+            text-align: center;
+            padding: 50px;
+            background: white;
+            border-radius: 36px;
+        }
+        .error-box {
+            background: #ffe6e5;
+            border-left: 5px solid #c0392b;
+            color: #a33;
+        }
+        .action-btn {
+            background: #2c7da0;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 14px 36px;
+            border-radius: 40px;
+            cursor: pointer;
+            margin: 10px 12px;
+            transition: 0.2s;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(44, 125, 160, 0.2);
+        }
+        .action-btn.reset {
+            background: #6c757d;
+            box-shadow: 0 4px 10px rgba(108, 117, 125, 0.2);
+        }
+        .action-btn.reset:hover {
+            background: #5a6268;
+        }
+        .action-btn:hover {
+            background: #1f617e;
+            transform: translateY(-1px);
+        }
+        .stats-text {
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            background: #eef2fa;
+            padding: 12px 24px;
+            border-radius: 40px;
+            display: inline-block;
+            color: #166b8f;
+        }
+        .button-group {
+            margin-top: 10px;
+        }
+        @media (max-width: 700px) {
+            .question-header, .options-area {
+                padding: 14px;
+            }
+            .option {
+                padding: 6px 12px;
+            }
+            .action-btn {
+                width: 100%;
+                margin: 6px 0;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="quiz-container">
+    <div class="header-card">
+        <h1>📋 Tibbiy test (faqat birinchi 100 ta savol)</h1>
+        <div class="sub">✅ testlar.txt fayli avtomatik yuklanadi. Variantlar aralashtiriladi.</div>
+        <div class="sub">▶️ Javobni tanlang — to‘g‘ri javob <span style="color:#2b8c4a;">yashil</span>, xato javob <span style="color:#c93a3a;">qizil</span> rangda belgilanadi. Tanlanganidan keyin boshqa javob tanlash bloklanadi.</div>
+        <div id="statusMessage" class="status-bar">⏳ testlar.txt fayli yuklanmoqda...</div>
+    </div>
+    <div id="quizRoot" class="quiz-questions">
+        <div class="loader">📂 Iltimos kuting, barcha savollar yuklanmoqda...</div>
+    </div>
+    <div class="footer-info" id="footerStats">
+        ⚕️ Test tayyor bo‘lgach, javoblarni belgilashingiz mumkin.
+        <div class="button-group">
+            <button id="resultBtn" class="action-btn" style="display:none;">📊 Natijalarni ko‘rish</button>
+            <button id="resetBtn" class="action-btn reset" style="display:none;">🔄 Testni qayta qilish</button>
+        </div>
+        <div><div id="resultDisplay" class="stats-text" style="display:none;"></div></div>
+    </div>
+</div>
+
+<script>
+    // ------------------------- PARSER (blok asosida, tartiblanmaydi) -------------------------
+    function parseAllQuestions(fullText) {
+        const lines = fullText.split(/\r?\n/);
+        const questions = [];
+        let i = 0;
+        const totalLines = lines.length;
+
+        while (i < totalLines) {
+            let line = lines[i].trim();
+            const questionMatch = line.match(/^(\d+)\.\s+(.*)/);
+            if (questionMatch) {
+                const questionNumber = parseInt(questionMatch[1], 10);
+                const questionText = questionMatch[2].trim();
+                const options = [];
+                let correctAnswer = null;
+                i++;
+                while (i < totalLines) {
+                    let optLine = lines[i].trim();
+                    if (optLine === "") {
+                        i++;
+                        continue;
+                    }
+                    if (optLine.match(/^\d+\.\s+/)) {
+                        break;
+                    }
+                    if (optLine.startsWith('*') || optLine.startsWith('[*') || optLine.startsWith('•')) {
+                        let isCorrect = optLine.includes("To'g'ri javob");
+                        let cleanOpt = optLine.replace(/^\[\*/, '').replace(/^\*/, '').replace(/^•/, '').trim();
+                        cleanOpt = cleanOpt.replace(/\(To'g'ri javob\)/g, '').replace(/To'g'ri javob/g, '');
+                        cleanOpt = cleanOpt.replace(/\{\.mark\}/g, '').replace(/\]/g, '').trim();
+                        if (cleanOpt === "") cleanOpt = optLine.replace(/^\*/, '').trim();
+                        if (cleanOpt !== "") {
+                            options.push(cleanOpt);
+                            if (isCorrect) {
+                                correctAnswer = cleanOpt;
+                            }
+                        }
+                        i++;
+                    } 
+                    else {
+                        i++;
+                    }
+                }
+                if (correctAnswer === null && options.length > 0) {
+                    console.warn(`Savol ${questionNumber} uchun "To'g'ri javob" belgisi topilmadi, birinchi variant belgilandi.`);
+                    correctAnswer = options[0];
+                }
+                if (options.length > 0) {
+                    questions.push({
+                        id: questionNumber,
+                        text: questionText,
+                        options: options,
+                        correctAnswer: correctAnswer
+                    });
+                } else {
+                    console.warn(`Savol ${questionNumber} variantlarsiz qoldi, o‘tkazib yuborildi.`);
+                }
+            } else {
+                i++;
+            }
+        }
+        // TARTIBLANMAYDI – faylda qanday ketma-ketlikda uchrasa, shu holatda saqlanadi
+        return questions;
+    }
+
+    function shuffleArray(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+    }
+
+    function prepareQuestions(parsed) {
+        return parsed.map(q => {
+            const shuffledOpts = shuffleArray([...q.options]);
+            return {
+                originalText: q.text,
+                shuffledOptions: shuffledOpts,
+                correctAnswerText: q.correctAnswer,
+                id: q.id
+            };
+        });
+    }
+
+    // ------------------------- GLOBAL -------------------------
+    let activeQuestions = [];       // barcha savollar (to‘liq)
+    let selectedAnswers = [];       // har bir indeks uchun tanlangan javob matni (yoki null)
+    let renderedCount = 100;        // faqat 100 ta savol ko‘rsatiladi
+
+    function renderQuiz(questionsData) {
+        // faqat birinchi 100 tasini olish (tartib saqlanadi)
+        const limited = questionsData.slice(0, renderedCount);
+        const container = document.getElementById('quizRoot');
+        if (!limited.length) {
+            container.innerHTML = `<div class="error-box">⚠️ Hech qanday savol topilmadi.</div>`;
+            document.getElementById('footerStats').innerHTML = `0 ta savol yuklandi.`;
+            return;
+        }
+
+        selectedAnswers = new Array(limited.length).fill(null);
+        let html = '';
+        for (let idx = 0; idx < limited.length; idx++) {
+            const q = limited[idx];
+            const shuffled = q.shuffledOptions;
+            const groupId = `q_${q.id}_${Date.now()}_${Math.random()}`;
+            html += `
+                <div class="question-card" data-qid="${q.id}" data-idx="${idx}">
+                    <div class="question-header">
+                        <div class="question-text"><span style="font-weight:700;">${idx+1}.</span> ${escapeHtml(q.originalText)}</div>
+                    </div>
+                    <div class="options-area" id="options-area-${idx}">
+                        ${shuffled.map((opt, optIdx) => `
+                            <div class="option" data-opt-val="${escapeHtml(opt)}">
+                                <input type="radio" name="${groupId}" value="${escapeHtml(opt)}" id="opt_${idx}_${optIdx}" class="option-radio">
+                                <label for="opt_${idx}_${optIdx}" class="option-text">${escapeHtml(opt)}</label>
+                            </div>
+                        `).join('')}
+                        <div class="feedback" id="fb-${idx}"></div>
+                    </div>
+                </div>
+            `;
+        }
+        container.innerHTML = html;
+
+        // Event listenerlar va javoblarni saqlash
+        for (let idx = 0; idx < limited.length; idx++) {
+            const q = limited[idx];
+            const correctAns = q.correctAnswerText;
+            const areaDiv = document.getElementById(`options-area-${idx}`);
+            if (!areaDiv) continue;
+            const radioInputs = areaDiv.querySelectorAll('input[type="radio"]');
+            const optionDivs = areaDiv.querySelectorAll('.option');
+            const feedbackSpan = document.getElementById(`fb-${idx}`);
+
+            radioInputs.forEach((radio) => {
+                radio.addEventListener('change', function(e) {
+                    // Agar bu savolga allaqachon javob berilgan bo'lsa, hech narsa qilma
+                    if (selectedAnswers[idx] !== null) return;
+
+                    // Tozalash
+                    optionDivs.forEach(div => {
+                        div.classList.remove('correct-highlight', 'wrong-highlight');
+                    });
+                    const selectedVal = radio.value;
+                    const isCorrect = (selectedVal === correctAns);
+                    
+                    // Saqlash
+                    selectedAnswers[idx] = selectedVal;
+                    
+                    // To‘g‘ri javobni yashil qilish
+                    optionDivs.forEach(div => {
+                        const optVal = div.getAttribute('data-opt-val');
+                        if (optVal === correctAns) {
+                            div.classList.add('correct-highlight');
+                        }
+                    });
+                    // Tanlangan xato bo‘lsa, qizil
+                    if (!isCorrect) {
+                        const parentDiv = radio.closest('.option');
+                        if (parentDiv) parentDiv.classList.add('wrong-highlight');
+                    }
+                    if (feedbackSpan) {
+                        if (isCorrect) {
+                            feedbackSpan.innerHTML = '✅ To‘g‘ri javob!';
+                            feedbackSpan.style.color = '#1e6f3f';
+                        } else {
+                            feedbackSpan.innerHTML = `❌ Xato. To‘g‘ri javob: “${escapeHtml(correctAns)}”`;
+                            feedbackSpan.style.color = '#b13b3b';
+                        }
+                    }
+
+                    // Javob tanlangandan so‘ng, barcha radio tugmalarni o‘chirish (boshqa tanlash imkoni yo‘q)
+                    radioInputs.forEach(r => { r.disabled = true; });
+                });
+            });
+        }
+        document.getElementById('footerStats').childNodes[0].nodeValue = `📊 Jami ${questionsData.length} ta savol yuklandi, lekin faqat birinchi ${limited.length} tasi ko‘rsatilmoqda. Javoblarni belgilang va natijani ko‘ring.`;
+        // Natija va reset tugmalarini ko‘rsatish
+        const resultBtn = document.getElementById('resultBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        if (resultBtn) resultBtn.style.display = 'inline-block';
+        if (resetBtn) resetBtn.style.display = 'inline-block';
+    }
+
+    function showResults() {
+        const total = selectedAnswers.length;
+        const resultDisplay = document.getElementById('resultDisplay');
+        if (total === 0) {
+            resultDisplay.style.display = 'inline-block';
+            resultDisplay.innerHTML = '⚠️ Hali hech qanday javob belgilanmagan.';
+            return;
+        }
+        let correctCount = 0;
+        for (let i = 0; i < total; i++) {
+            const userAnswer = selectedAnswers[i];
+            if (userAnswer && activeQuestions[i] && userAnswer === activeQuestions[i].correctAnswerText) {
+                correctCount++;
+            }
+        }
+        const incorrectCount = total - correctCount;
+        const percent = Math.round((correctCount / total) * 100);
+        resultDisplay.style.display = 'inline-block';
+        resultDisplay.innerHTML = `📊 Natija: ${correctCount} ta to‘g‘ri, ${incorrectCount} ta noto‘g‘ri (jami ${total} ta). Ball: ${percent}%`;
+        resultDisplay.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Testni qayta boshlash (qayta yuklash)
+    async function resetQuiz() {
+        // Tozalash
+        document.getElementById('quizRoot').innerHTML = `<div class="loader">📂 Test qayta boshlanmoqda...</div>`;
+        const resultDisplay = document.getElementById('resultDisplay');
+        resultDisplay.innerHTML = '';
+        resultDisplay.style.display = 'none';
+        document.getElementById('statusMessage').innerHTML = '⏳ testlar.txt fayli qayta yuklanmoqda...';
+        // Tugmalarni vaqtincha yashirish
+        const resultBtn = document.getElementById('resultBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        if (resultBtn) resultBtn.style.display = 'none';
+        if (resetBtn) resetBtn.style.display = 'none';
+        // Qayta yuklash
+        await loadAndStart();
+    }
+
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        }).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, c => c);
+    }
+
+    // ------------------------- YUKLASH -------------------------
+    async function loadAndStart() {
+        const statusDiv = document.getElementById('statusMessage');
+        const quizRoot = document.getElementById('quizRoot');
+        try {
+            statusDiv.innerHTML = '⏳ testlar.txt fayli yuklanmoqda (katta hajm, biroz kuting)...';
+            const response = await fetch('testlar.txt');
+            if (!response.ok) {
+                throw new Error(`Fayl topilmadi (HTTP ${response.status}). testlar.txt fayli index.html bilan bir papkada bo‘lishi kerak.`);
+            }
+            const fileText = await response.text();
+            if (!fileText || fileText.trim().length === 0) {
+                throw new Error('Fayl bo‘sh, hech qanday savol yo‘q.');
+            }
+            const parsed = parseAllQuestions(fileText);
+            if (parsed.length === 0) {
+                throw new Error('Hech qanday savol topilmadi.');
+            }
+            const shuffledFull = prepareQuestions(parsed);
+            activeQuestions = shuffledFull;   // to‘liq massiv (tartib saqlangan)
+            renderQuiz(activeQuestions);      // render faqat 100 tasini oladi
+            statusDiv.innerHTML = `✅ ${parsed.length} ta savol yuklandi (faqat birinchi 100 tasi ko‘rsatilmoqda). Variantlar aralashtirildi.`;
+        } catch (err) {
+            console.error(err);
+            statusDiv.innerHTML = `❌ Xatolik: ${err.message}`;
+            quizRoot.innerHTML = `<div class="error-box">⚠️ testlar.txt faylini yuklab bo‘lmadi.<br>Sababi: ${err.message}<br><br>📌 Fayl nomi <strong>testlar.txt</strong> va u index.html bilan bir papkada ekanligini tekshiring.</div>`;
+            // tugmalarni yashirish
+            const resultBtn = document.getElementById('resultBtn');
+            const resetBtn = document.getElementById('resetBtn');
+            if (resultBtn) resultBtn.style.display = 'none';
+            if (resetBtn) resetBtn.style.display = 'none';
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+        loadAndStart();
+        const resultBtn = document.getElementById('resultBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        if (resultBtn) resultBtn.addEventListener('click', showResults);
+        if (resetBtn) resetBtn.addEventListener('click', resetQuiz);
+    });
+</script>
+</body>
+</html>
